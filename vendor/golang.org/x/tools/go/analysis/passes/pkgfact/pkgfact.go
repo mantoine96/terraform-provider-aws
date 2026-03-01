@@ -10,14 +10,14 @@
 // Each key/value pair comes from a top-level constant declaration
 // whose name starts and ends with "_".  For example:
 //
-//      package p
+//	package p
 //
-// 	const _greeting_  = "hello"
-// 	const _audience_  = "world"
+//	const _greeting_  = "hello"
+//	const _audience_  = "world"
 //
 // the pkgfact analysis output for package p would be:
 //
-//   {"greeting": "hello", "audience": "world"}.
+//	{"greeting": "hello", "audience": "world"}.
 //
 // In addition, the analysis reports a diagnostic at each import
 // showing which key/value pairs it contributes.
@@ -38,13 +38,14 @@ import (
 var Analyzer = &analysis.Analyzer{
 	Name:       "pkgfact",
 	Doc:        "gather name/value pairs from constant declarations",
+	URL:        "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/pkgfact",
 	Run:        run,
 	FactTypes:  []analysis.Fact{new(pairsFact)},
 	ResultType: reflect.TypeOf(map[string]string{}),
 }
 
 // A pairsFact is a package-level fact that records
-// an set of key=value strings accumulated from constant
+// a set of key=value strings accumulated from constant
 // declarations in this package and its dependencies.
 // Elements are ordered by keys, which are unique.
 type pairsFact []string
@@ -66,7 +67,7 @@ func run(pass *analysis.Pass) (interface{}, error) {
 				eq := strings.IndexByte(pair, '=')
 				result[pair[:eq]] = pair[1+eq:]
 			}
-			pass.Reportf(spec.Pos(), "%s", strings.Join(fact, " "))
+			pass.ReportRangef(spec, "%s", strings.Join(fact, " "))
 		}
 	}
 
