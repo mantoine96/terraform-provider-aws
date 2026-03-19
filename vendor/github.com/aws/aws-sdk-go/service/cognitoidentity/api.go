@@ -81,24 +81,24 @@ func (c *CognitoIdentity) CreateIdentityPoolRequest(input *CreateIdentityPoolInp
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation CreateIdentityPool for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   Thrown when the total number of user pools has exceeded a preset limit.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/CreateIdentityPool
@@ -179,14 +179,14 @@ func (c *CognitoIdentity) DeleteIdentitiesRequest(input *DeleteIdentitiesInput) 
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation DeleteIdentities for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/DeleteIdentities
@@ -268,21 +268,21 @@ func (c *CognitoIdentity) DeleteIdentityPoolRequest(input *DeleteIdentityPoolInp
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation DeleteIdentityPool for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/DeleteIdentityPool
@@ -363,21 +363,21 @@ func (c *CognitoIdentity) DescribeIdentityRequest(input *DescribeIdentityInput) 
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation DescribeIdentity for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/DescribeIdentity
@@ -458,21 +458,21 @@ func (c *CognitoIdentity) DescribeIdentityPoolRequest(input *DescribeIdentityPoo
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation DescribeIdentityPool for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/DescribeIdentityPool
@@ -556,32 +556,32 @@ func (c *CognitoIdentity) GetCredentialsForIdentityRequest(input *GetCredentials
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation GetCredentialsForIdentity for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInvalidIdentityPoolConfigurationException "InvalidIdentityPoolConfigurationException"
+//   * InvalidIdentityPoolConfigurationException
 //   Thrown if the identity pool has no role associated for the given auth type
 //   (auth/unauth) or if the AssumeRole fails.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeExternalServiceException "ExternalServiceException"
+//   * ExternalServiceException
 //   An exception thrown when a dependent service such as Facebook or Twitter
 //   is not responding
 //
@@ -664,31 +664,31 @@ func (c *CognitoIdentity) GetIdRequest(input *GetIdInput) (req *request.Request,
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation GetId for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   Thrown when the total number of user pools has exceeded a preset limit.
 //
-//   * ErrCodeExternalServiceException "ExternalServiceException"
+//   * ExternalServiceException
 //   An exception thrown when a dependent service such as Facebook or Twitter
 //   is not responding
 //
@@ -769,25 +769,25 @@ func (c *CognitoIdentity) GetIdentityPoolRolesRequest(input *GetIdentityPoolRole
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation GetIdentityPoolRoles for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/GetIdentityPoolRoles
@@ -861,7 +861,7 @@ func (c *CognitoIdentity) GetOpenIdTokenRequest(input *GetOpenIdTokenInput) (req
 // returned by GetId. You can optionally add additional logins for the identity.
 // Supplying multiple logins creates an implicit link.
 //
-// The OpenId token is valid for 10 minutes.
+// The OpenID token is valid for 10 minutes.
 //
 // This is a public API. You do not need any credentials to call this API.
 //
@@ -872,28 +872,28 @@ func (c *CognitoIdentity) GetOpenIdTokenRequest(input *GetOpenIdTokenInput) (req
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation GetOpenIdToken for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeExternalServiceException "ExternalServiceException"
+//   * ExternalServiceException
 //   An exception thrown when a dependent service such as Facebook or Twitter
 //   is not responding
 //
@@ -987,28 +987,28 @@ func (c *CognitoIdentity) GetOpenIdTokenForDeveloperIdentityRequest(input *GetOp
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation GetOpenIdTokenForDeveloperIdentity for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeDeveloperUserAlreadyRegisteredException "DeveloperUserAlreadyRegisteredException"
+//   * DeveloperUserAlreadyRegisteredException
 //   The provided developer user identifier is already registered with Cognito
 //   under a different identity ID.
 //
@@ -1029,6 +1029,99 @@ func (c *CognitoIdentity) GetOpenIdTokenForDeveloperIdentity(input *GetOpenIdTok
 // for more information on using Contexts.
 func (c *CognitoIdentity) GetOpenIdTokenForDeveloperIdentityWithContext(ctx aws.Context, input *GetOpenIdTokenForDeveloperIdentityInput, opts ...request.Option) (*GetOpenIdTokenForDeveloperIdentityOutput, error) {
 	req, out := c.GetOpenIdTokenForDeveloperIdentityRequest(input)
+	req.SetContext(ctx)
+	req.ApplyOptions(opts...)
+	return out, req.Send()
+}
+
+const opGetPrincipalTagAttributeMap = "GetPrincipalTagAttributeMap"
+
+// GetPrincipalTagAttributeMapRequest generates a "aws/request.Request" representing the
+// client's request for the GetPrincipalTagAttributeMap operation. The "output" return
+// value will be populated with the request's response once the request completes
+// successfully.
+//
+// Use "Send" method on the returned Request to send the API call to the service.
+// the "output" return value is not valid until after Send returns without error.
+//
+// See GetPrincipalTagAttributeMap for more information on using the GetPrincipalTagAttributeMap
+// API call, and error handling.
+//
+// This method is useful when you want to inject custom logic or configuration
+// into the SDK's request lifecycle. Such as custom headers, or retry logic.
+//
+//
+//    // Example sending a request using the GetPrincipalTagAttributeMapRequest method.
+//    req, resp := client.GetPrincipalTagAttributeMapRequest(params)
+//
+//    err := req.Send()
+//    if err == nil { // resp is now filled
+//        fmt.Println(resp)
+//    }
+//
+// See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/GetPrincipalTagAttributeMap
+func (c *CognitoIdentity) GetPrincipalTagAttributeMapRequest(input *GetPrincipalTagAttributeMapInput) (req *request.Request, output *GetPrincipalTagAttributeMapOutput) {
+	op := &request.Operation{
+		Name:       opGetPrincipalTagAttributeMap,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &GetPrincipalTagAttributeMapInput{}
+	}
+
+	output = &GetPrincipalTagAttributeMapOutput{}
+	req = c.newRequest(op, input, output)
+	return
+}
+
+// GetPrincipalTagAttributeMap API operation for Amazon Cognito Identity.
+//
+// Use GetPrincipalTagAttributeMap to list all mappings between PrincipalTags
+// and user attributes.
+//
+// Returns awserr.Error for service API and SDK errors. Use runtime type assertions
+// with awserr.Error's Code and Message methods to get detailed information about
+// the error.
+//
+// See the AWS API reference guide for Amazon Cognito Identity's
+// API operation GetPrincipalTagAttributeMap for usage and error information.
+//
+// Returned Error Types:
+//   * InvalidParameterException
+//   Thrown for missing or bad input parameter(s).
+//
+//   * ResourceNotFoundException
+//   Thrown when the requested resource (for example, a dataset or record) does
+//   not exist.
+//
+//   * NotAuthorizedException
+//   Thrown when a user is not authorized to access the requested resource.
+//
+//   * TooManyRequestsException
+//   Thrown when a request is throttled.
+//
+//   * InternalErrorException
+//   Thrown when the service encounters an error during processing the request.
+//
+// See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/GetPrincipalTagAttributeMap
+func (c *CognitoIdentity) GetPrincipalTagAttributeMap(input *GetPrincipalTagAttributeMapInput) (*GetPrincipalTagAttributeMapOutput, error) {
+	req, out := c.GetPrincipalTagAttributeMapRequest(input)
+	return out, req.Send()
+}
+
+// GetPrincipalTagAttributeMapWithContext is the same as GetPrincipalTagAttributeMap with the addition of
+// the ability to pass a context and additional request options.
+//
+// See GetPrincipalTagAttributeMap for details on how to use this API operation.
+//
+// The context must be non-nil and will be used for request cancellation. If
+// the context is nil a panic will occur. In the future the SDK may create
+// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// for more information on using Contexts.
+func (c *CognitoIdentity) GetPrincipalTagAttributeMapWithContext(ctx aws.Context, input *GetPrincipalTagAttributeMapInput, opts ...request.Option) (*GetPrincipalTagAttributeMapOutput, error) {
+	req, out := c.GetPrincipalTagAttributeMapRequest(input)
 	req.SetContext(ctx)
 	req.ApplyOptions(opts...)
 	return out, req.Send()
@@ -1089,21 +1182,21 @@ func (c *CognitoIdentity) ListIdentitiesRequest(input *ListIdentitiesInput) (req
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation ListIdentities for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/ListIdentities
@@ -1159,6 +1252,12 @@ func (c *CognitoIdentity) ListIdentityPoolsRequest(input *ListIdentityPoolsInput
 		Name:       opListIdentityPools,
 		HTTPMethod: "POST",
 		HTTPPath:   "/",
+		Paginator: &request.Paginator{
+			InputTokens:     []string{"NextToken"},
+			OutputTokens:    []string{"NextToken"},
+			LimitToken:      "MaxResults",
+			TruncationToken: "",
+		},
 	}
 
 	if input == nil {
@@ -1183,21 +1282,21 @@ func (c *CognitoIdentity) ListIdentityPoolsRequest(input *ListIdentityPoolsInput
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation ListIdentityPools for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/ListIdentityPools
@@ -1220,6 +1319,58 @@ func (c *CognitoIdentity) ListIdentityPoolsWithContext(ctx aws.Context, input *L
 	req.SetContext(ctx)
 	req.ApplyOptions(opts...)
 	return out, req.Send()
+}
+
+// ListIdentityPoolsPages iterates over the pages of a ListIdentityPools operation,
+// calling the "fn" function with the response data for each page. To stop
+// iterating, return false from the fn function.
+//
+// See ListIdentityPools method for more information on how to use this operation.
+//
+// Note: This operation can generate multiple requests to a service.
+//
+//    // Example iterating over at most 3 pages of a ListIdentityPools operation.
+//    pageNum := 0
+//    err := client.ListIdentityPoolsPages(params,
+//        func(page *cognitoidentity.ListIdentityPoolsOutput, lastPage bool) bool {
+//            pageNum++
+//            fmt.Println(page)
+//            return pageNum <= 3
+//        })
+//
+func (c *CognitoIdentity) ListIdentityPoolsPages(input *ListIdentityPoolsInput, fn func(*ListIdentityPoolsOutput, bool) bool) error {
+	return c.ListIdentityPoolsPagesWithContext(aws.BackgroundContext(), input, fn)
+}
+
+// ListIdentityPoolsPagesWithContext same as ListIdentityPoolsPages except
+// it takes a Context and allows setting request options on the pages.
+//
+// The context must be non-nil and will be used for request cancellation. If
+// the context is nil a panic will occur. In the future the SDK may create
+// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// for more information on using Contexts.
+func (c *CognitoIdentity) ListIdentityPoolsPagesWithContext(ctx aws.Context, input *ListIdentityPoolsInput, fn func(*ListIdentityPoolsOutput, bool) bool, opts ...request.Option) error {
+	p := request.Pagination{
+		NewRequest: func() (*request.Request, error) {
+			var inCpy *ListIdentityPoolsInput
+			if input != nil {
+				tmp := *input
+				inCpy = &tmp
+			}
+			req, _ := c.ListIdentityPoolsRequest(inCpy)
+			req.SetContext(ctx)
+			req.ApplyOptions(opts...)
+			return req, nil
+		},
+	}
+
+	for p.Next() {
+		if !fn(p.Page().(*ListIdentityPoolsOutput), !p.HasNextPage()) {
+			break
+		}
+	}
+
+	return p.Err()
 }
 
 const opListTagsForResource = "ListTagsForResource"
@@ -1281,21 +1432,21 @@ func (c *CognitoIdentity) ListTagsForResourceRequest(input *ListTagsForResourceI
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation ListTagsForResource for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/ListTagsForResource
@@ -1389,25 +1540,25 @@ func (c *CognitoIdentity) LookupDeveloperIdentityRequest(input *LookupDeveloperI
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation LookupDeveloperIdentity for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/LookupDeveloperIdentity
@@ -1497,25 +1648,25 @@ func (c *CognitoIdentity) MergeDeveloperIdentitiesRequest(input *MergeDeveloperI
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation MergeDeveloperIdentities for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/MergeDeveloperIdentities
@@ -1597,28 +1748,28 @@ func (c *CognitoIdentity) SetIdentityPoolRolesRequest(input *SetIdentityPoolRole
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation SetIdentityPoolRoles for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeConcurrentModificationException "ConcurrentModificationException"
+//   * ConcurrentModificationException
 //   Thrown if there are parallel requests to modify a resource.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/SetIdentityPoolRoles
@@ -1638,6 +1789,99 @@ func (c *CognitoIdentity) SetIdentityPoolRoles(input *SetIdentityPoolRolesInput)
 // for more information on using Contexts.
 func (c *CognitoIdentity) SetIdentityPoolRolesWithContext(ctx aws.Context, input *SetIdentityPoolRolesInput, opts ...request.Option) (*SetIdentityPoolRolesOutput, error) {
 	req, out := c.SetIdentityPoolRolesRequest(input)
+	req.SetContext(ctx)
+	req.ApplyOptions(opts...)
+	return out, req.Send()
+}
+
+const opSetPrincipalTagAttributeMap = "SetPrincipalTagAttributeMap"
+
+// SetPrincipalTagAttributeMapRequest generates a "aws/request.Request" representing the
+// client's request for the SetPrincipalTagAttributeMap operation. The "output" return
+// value will be populated with the request's response once the request completes
+// successfully.
+//
+// Use "Send" method on the returned Request to send the API call to the service.
+// the "output" return value is not valid until after Send returns without error.
+//
+// See SetPrincipalTagAttributeMap for more information on using the SetPrincipalTagAttributeMap
+// API call, and error handling.
+//
+// This method is useful when you want to inject custom logic or configuration
+// into the SDK's request lifecycle. Such as custom headers, or retry logic.
+//
+//
+//    // Example sending a request using the SetPrincipalTagAttributeMapRequest method.
+//    req, resp := client.SetPrincipalTagAttributeMapRequest(params)
+//
+//    err := req.Send()
+//    if err == nil { // resp is now filled
+//        fmt.Println(resp)
+//    }
+//
+// See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/SetPrincipalTagAttributeMap
+func (c *CognitoIdentity) SetPrincipalTagAttributeMapRequest(input *SetPrincipalTagAttributeMapInput) (req *request.Request, output *SetPrincipalTagAttributeMapOutput) {
+	op := &request.Operation{
+		Name:       opSetPrincipalTagAttributeMap,
+		HTTPMethod: "POST",
+		HTTPPath:   "/",
+	}
+
+	if input == nil {
+		input = &SetPrincipalTagAttributeMapInput{}
+	}
+
+	output = &SetPrincipalTagAttributeMapOutput{}
+	req = c.newRequest(op, input, output)
+	return
+}
+
+// SetPrincipalTagAttributeMap API operation for Amazon Cognito Identity.
+//
+// You can use this operation to use default (username and clientID) attribute
+// or custom attribute mappings.
+//
+// Returns awserr.Error for service API and SDK errors. Use runtime type assertions
+// with awserr.Error's Code and Message methods to get detailed information about
+// the error.
+//
+// See the AWS API reference guide for Amazon Cognito Identity's
+// API operation SetPrincipalTagAttributeMap for usage and error information.
+//
+// Returned Error Types:
+//   * InvalidParameterException
+//   Thrown for missing or bad input parameter(s).
+//
+//   * ResourceNotFoundException
+//   Thrown when the requested resource (for example, a dataset or record) does
+//   not exist.
+//
+//   * NotAuthorizedException
+//   Thrown when a user is not authorized to access the requested resource.
+//
+//   * TooManyRequestsException
+//   Thrown when a request is throttled.
+//
+//   * InternalErrorException
+//   Thrown when the service encounters an error during processing the request.
+//
+// See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/SetPrincipalTagAttributeMap
+func (c *CognitoIdentity) SetPrincipalTagAttributeMap(input *SetPrincipalTagAttributeMapInput) (*SetPrincipalTagAttributeMapOutput, error) {
+	req, out := c.SetPrincipalTagAttributeMapRequest(input)
+	return out, req.Send()
+}
+
+// SetPrincipalTagAttributeMapWithContext is the same as SetPrincipalTagAttributeMap with the addition of
+// the ability to pass a context and additional request options.
+//
+// See SetPrincipalTagAttributeMap for details on how to use this API operation.
+//
+// The context must be non-nil and will be used for request cancellation. If
+// the context is nil a panic will occur. In the future the SDK may create
+// sub-contexts for http.Requests. See https://golang.org/pkg/context/
+// for more information on using Contexts.
+func (c *CognitoIdentity) SetPrincipalTagAttributeMapWithContext(ctx aws.Context, input *SetPrincipalTagAttributeMapInput, opts ...request.Option) (*SetPrincipalTagAttributeMapOutput, error) {
+	req, out := c.SetPrincipalTagAttributeMapRequest(input)
 	req.SetContext(ctx)
 	req.ApplyOptions(opts...)
 	return out, req.Send()
@@ -1688,9 +1932,9 @@ func (c *CognitoIdentity) TagResourceRequest(input *TagResourceInput) (req *requ
 
 // TagResource API operation for Amazon Cognito Identity.
 //
-// Assigns a set of tags to an Amazon Cognito identity pool. A tag is a label
-// that you can use to categorize and manage identity pools in different ways,
-// such as by purpose, owner, environment, or other criteria.
+// Assigns a set of tags to the specified Amazon Cognito identity pool. A tag
+// is a label that you can use to categorize and manage identity pools in different
+// ways, such as by purpose, owner, environment, or other criteria.
 //
 // Each tag consists of a key and value, both of which you define. A key is
 // a general category for more specific values. For example, if you have two
@@ -1714,21 +1958,21 @@ func (c *CognitoIdentity) TagResourceRequest(input *TagResourceInput) (req *requ
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation TagResource for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/TagResource
@@ -1812,25 +2056,25 @@ func (c *CognitoIdentity) UnlinkDeveloperIdentityRequest(input *UnlinkDeveloperI
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation UnlinkDeveloperIdentity for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/UnlinkDeveloperIdentity
@@ -1914,28 +2158,28 @@ func (c *CognitoIdentity) UnlinkIdentityRequest(input *UnlinkIdentityInput) (req
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation UnlinkIdentity for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeExternalServiceException "ExternalServiceException"
+//   * ExternalServiceException
 //   An exception thrown when a dependent service such as Facebook or Twitter
 //   is not responding
 //
@@ -2006,8 +2250,8 @@ func (c *CognitoIdentity) UntagResourceRequest(input *UntagResourceInput) (req *
 
 // UntagResource API operation for Amazon Cognito Identity.
 //
-// Removes the specified tags from an Amazon Cognito identity pool. You can
-// use this action up to 5 times per second, per account
+// Removes the specified tags from the specified Amazon Cognito identity pool.
+// You can use this action up to 5 times per second, per account
 //
 // Returns awserr.Error for service API and SDK errors. Use runtime type assertions
 // with awserr.Error's Code and Message methods to get detailed information about
@@ -2016,21 +2260,21 @@ func (c *CognitoIdentity) UntagResourceRequest(input *UntagResourceInput) (req *
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation UntagResource for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/UntagResource
@@ -2110,31 +2354,31 @@ func (c *CognitoIdentity) UpdateIdentityPoolRequest(input *IdentityPool) (req *r
 // See the AWS API reference guide for Amazon Cognito Identity's
 // API operation UpdateIdentityPool for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidParameterException "InvalidParameterException"
+// Returned Error Types:
+//   * InvalidParameterException
 //   Thrown for missing or bad input parameter(s).
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   Thrown when the requested resource (for example, a dataset or record) does
 //   not exist.
 //
-//   * ErrCodeNotAuthorizedException "NotAuthorizedException"
+//   * NotAuthorizedException
 //   Thrown when a user is not authorized to access the requested resource.
 //
-//   * ErrCodeResourceConflictException "ResourceConflictException"
+//   * ResourceConflictException
 //   Thrown when a user tries to use a login which is already linked to another
 //   account.
 //
-//   * ErrCodeTooManyRequestsException "TooManyRequestsException"
+//   * TooManyRequestsException
 //   Thrown when a request is throttled.
 //
-//   * ErrCodeInternalErrorException "InternalErrorException"
+//   * InternalErrorException
 //   Thrown when the service encounters an error during processing the request.
 //
-//   * ErrCodeConcurrentModificationException "ConcurrentModificationException"
+//   * ConcurrentModificationException
 //   Thrown if there are parallel requests to modify a resource.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   Thrown when the total number of user pools has exceeded a preset limit.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/cognito-identity-2014-06-30/UpdateIdentityPool
@@ -2157,6 +2401,63 @@ func (c *CognitoIdentity) UpdateIdentityPoolWithContext(ctx aws.Context, input *
 	req.SetContext(ctx)
 	req.ApplyOptions(opts...)
 	return out, req.Send()
+}
+
+// Thrown if there are parallel requests to modify a resource.
+type ConcurrentModificationException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by a ConcurrentModificationException.
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s ConcurrentModificationException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ConcurrentModificationException) GoString() string {
+	return s.String()
+}
+
+func newErrorConcurrentModificationException(v protocol.ResponseMetadata) error {
+	return &ConcurrentModificationException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *ConcurrentModificationException) Code() string {
+	return "ConcurrentModificationException"
+}
+
+// Message returns the exception's message.
+func (s *ConcurrentModificationException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *ConcurrentModificationException) OrigErr() error {
+	return nil
+}
+
+func (s *ConcurrentModificationException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *ConcurrentModificationException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *ConcurrentModificationException) RequestID() string {
+	return s.RespMetadata.RequestID
 }
 
 // Input to the CreateIdentityPool action.
@@ -2195,7 +2496,7 @@ type CreateIdentityPoolInput struct {
 	// by purpose, owner, environment, or other criteria.
 	IdentityPoolTags map[string]*string `type:"map"`
 
-	// A list of OpendID Connect provider ARNs.
+	// The Amazon Resource Names (ARN) of the OpenID Connect providers.
 	OpenIdConnectProviderARNs []*string `type:"list"`
 
 	// An array of Amazon Resource Names (ARNs) of the SAML provider for your identity
@@ -2560,6 +2861,122 @@ func (s *DescribeIdentityPoolInput) SetIdentityPoolId(v string) *DescribeIdentit
 	return s
 }
 
+// The provided developer user identifier is already registered with Cognito
+// under a different identity ID.
+type DeveloperUserAlreadyRegisteredException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// This developer user identifier is already registered with Cognito.
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s DeveloperUserAlreadyRegisteredException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s DeveloperUserAlreadyRegisteredException) GoString() string {
+	return s.String()
+}
+
+func newErrorDeveloperUserAlreadyRegisteredException(v protocol.ResponseMetadata) error {
+	return &DeveloperUserAlreadyRegisteredException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *DeveloperUserAlreadyRegisteredException) Code() string {
+	return "DeveloperUserAlreadyRegisteredException"
+}
+
+// Message returns the exception's message.
+func (s *DeveloperUserAlreadyRegisteredException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *DeveloperUserAlreadyRegisteredException) OrigErr() error {
+	return nil
+}
+
+func (s *DeveloperUserAlreadyRegisteredException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *DeveloperUserAlreadyRegisteredException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *DeveloperUserAlreadyRegisteredException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
+// An exception thrown when a dependent service such as Facebook or Twitter
+// is not responding
+type ExternalServiceException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by an ExternalServiceException
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s ExternalServiceException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ExternalServiceException) GoString() string {
+	return s.String()
+}
+
+func newErrorExternalServiceException(v protocol.ResponseMetadata) error {
+	return &ExternalServiceException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *ExternalServiceException) Code() string {
+	return "ExternalServiceException"
+}
+
+// Message returns the exception's message.
+func (s *ExternalServiceException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *ExternalServiceException) OrigErr() error {
+	return nil
+}
+
+func (s *ExternalServiceException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *ExternalServiceException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *ExternalServiceException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
 // Input to the GetCredentialsForIdentity action.
 type GetCredentialsForIdentityInput struct {
 	_ struct{} `type:"structure"`
@@ -2582,8 +2999,8 @@ type GetCredentialsForIdentityInput struct {
 	// identity.
 	//
 	// The Logins parameter is required when using identities associated with external
-	// identity providers such as FaceBook. For examples of Logins maps, see the
-	// code examples in the External Identity Providers (http://docs.aws.amazon.com/cognito/latest/developerguide/external-identity-providers.html)
+	// identity providers such as Facebook. For examples of Logins maps, see the
+	// code examples in the External Identity Providers (https://docs.aws.amazon.com/cognito/latest/developerguide/external-identity-providers.html)
 	// section of the Amazon Cognito Developer Guide.
 	Logins map[string]*string `type:"map"`
 }
@@ -2881,6 +3298,9 @@ type GetOpenIdTokenForDeveloperIdentityInput struct {
 	// Logins is a required field
 	Logins map[string]*string `type:"map" required:"true"`
 
+	// Use this operation to configure attribute mappings for custom providers.
+	PrincipalTags map[string]*string `type:"map"`
+
 	// The expiration time of the token, in seconds. You can specify a custom expiration
 	// time for the token so that you can cache it. If you don't provide an expiration
 	// time, the token is valid for 15 minutes. You can exchange the token with
@@ -2948,6 +3368,12 @@ func (s *GetOpenIdTokenForDeveloperIdentityInput) SetLogins(v map[string]*string
 	return s
 }
 
+// SetPrincipalTags sets the PrincipalTags field's value.
+func (s *GetOpenIdTokenForDeveloperIdentityInput) SetPrincipalTags(v map[string]*string) *GetOpenIdTokenForDeveloperIdentityInput {
+	s.PrincipalTags = v
+	return s
+}
+
 // SetTokenDuration sets the TokenDuration field's value.
 func (s *GetOpenIdTokenForDeveloperIdentityInput) SetTokenDuration(v int64) *GetOpenIdTokenForDeveloperIdentityInput {
 	s.TokenDuration = &v
@@ -2999,7 +3425,7 @@ type GetOpenIdTokenInput struct {
 	// A set of optional name-value pairs that map provider names to provider tokens.
 	// When using graph.facebook.com and www.amazon.com, supply the access_token
 	// returned from the provider's authflow. For accounts.google.com, an Amazon
-	// Cognito user pool provider, or any other OpenId Connect provider, always
+	// Cognito user pool provider, or any other OpenID Connect provider, always
 	// include the id_token.
 	Logins map[string]*string `type:"map"`
 }
@@ -3073,6 +3499,117 @@ func (s *GetOpenIdTokenOutput) SetIdentityId(v string) *GetOpenIdTokenOutput {
 // SetToken sets the Token field's value.
 func (s *GetOpenIdTokenOutput) SetToken(v string) *GetOpenIdTokenOutput {
 	s.Token = &v
+	return s
+}
+
+type GetPrincipalTagAttributeMapInput struct {
+	_ struct{} `type:"structure"`
+
+	// You can use this operation to get the ID of the Identity Pool you setup attribute
+	// mappings for.
+	//
+	// IdentityPoolId is a required field
+	IdentityPoolId *string `min:"1" type:"string" required:"true"`
+
+	// You can use this operation to get the provider name.
+	//
+	// IdentityProviderName is a required field
+	IdentityProviderName *string `min:"1" type:"string" required:"true"`
+}
+
+// String returns the string representation
+func (s GetPrincipalTagAttributeMapInput) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s GetPrincipalTagAttributeMapInput) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *GetPrincipalTagAttributeMapInput) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "GetPrincipalTagAttributeMapInput"}
+	if s.IdentityPoolId == nil {
+		invalidParams.Add(request.NewErrParamRequired("IdentityPoolId"))
+	}
+	if s.IdentityPoolId != nil && len(*s.IdentityPoolId) < 1 {
+		invalidParams.Add(request.NewErrParamMinLen("IdentityPoolId", 1))
+	}
+	if s.IdentityProviderName == nil {
+		invalidParams.Add(request.NewErrParamRequired("IdentityProviderName"))
+	}
+	if s.IdentityProviderName != nil && len(*s.IdentityProviderName) < 1 {
+		invalidParams.Add(request.NewErrParamMinLen("IdentityProviderName", 1))
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetIdentityPoolId sets the IdentityPoolId field's value.
+func (s *GetPrincipalTagAttributeMapInput) SetIdentityPoolId(v string) *GetPrincipalTagAttributeMapInput {
+	s.IdentityPoolId = &v
+	return s
+}
+
+// SetIdentityProviderName sets the IdentityProviderName field's value.
+func (s *GetPrincipalTagAttributeMapInput) SetIdentityProviderName(v string) *GetPrincipalTagAttributeMapInput {
+	s.IdentityProviderName = &v
+	return s
+}
+
+type GetPrincipalTagAttributeMapOutput struct {
+	_ struct{} `type:"structure"`
+
+	// You can use this operation to get the ID of the Identity Pool you setup attribute
+	// mappings for.
+	IdentityPoolId *string `min:"1" type:"string"`
+
+	// You can use this operation to get the provider name.
+	IdentityProviderName *string `min:"1" type:"string"`
+
+	// You can use this operation to add principal tags. The PrincipalTagsoperation
+	// enables you to reference user attributes in your IAM permissions policy.
+	PrincipalTags map[string]*string `type:"map"`
+
+	// You can use this operation to list
+	UseDefaults *bool `type:"boolean"`
+}
+
+// String returns the string representation
+func (s GetPrincipalTagAttributeMapOutput) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s GetPrincipalTagAttributeMapOutput) GoString() string {
+	return s.String()
+}
+
+// SetIdentityPoolId sets the IdentityPoolId field's value.
+func (s *GetPrincipalTagAttributeMapOutput) SetIdentityPoolId(v string) *GetPrincipalTagAttributeMapOutput {
+	s.IdentityPoolId = &v
+	return s
+}
+
+// SetIdentityProviderName sets the IdentityProviderName field's value.
+func (s *GetPrincipalTagAttributeMapOutput) SetIdentityProviderName(v string) *GetPrincipalTagAttributeMapOutput {
+	s.IdentityProviderName = &v
+	return s
+}
+
+// SetPrincipalTags sets the PrincipalTags field's value.
+func (s *GetPrincipalTagAttributeMapOutput) SetPrincipalTags(v map[string]*string) *GetPrincipalTagAttributeMapOutput {
+	s.PrincipalTags = v
+	return s
+}
+
+// SetUseDefaults sets the UseDefaults field's value.
+func (s *GetPrincipalTagAttributeMapOutput) SetUseDefaults(v bool) *GetPrincipalTagAttributeMapOutput {
+	s.UseDefaults = &v
 	return s
 }
 
@@ -3162,7 +3699,7 @@ type IdentityPool struct {
 	// such as by purpose, owner, environment, or other criteria.
 	IdentityPoolTags map[string]*string `type:"map"`
 
-	// A list of OpendID Connect provider ARNs.
+	// The ARNs of the OpenID Connect providers.
 	OpenIdConnectProviderARNs []*string `type:"list"`
 
 	// An array of Amazon Resource Names (ARNs) of the SAML provider for your identity
@@ -3312,6 +3849,235 @@ func (s *IdentityPoolShortDescription) SetIdentityPoolId(v string) *IdentityPool
 func (s *IdentityPoolShortDescription) SetIdentityPoolName(v string) *IdentityPoolShortDescription {
 	s.IdentityPoolName = &v
 	return s
+}
+
+// Thrown when the service encounters an error during processing the request.
+type InternalErrorException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by an InternalErrorException.
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s InternalErrorException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InternalErrorException) GoString() string {
+	return s.String()
+}
+
+func newErrorInternalErrorException(v protocol.ResponseMetadata) error {
+	return &InternalErrorException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *InternalErrorException) Code() string {
+	return "InternalErrorException"
+}
+
+// Message returns the exception's message.
+func (s *InternalErrorException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *InternalErrorException) OrigErr() error {
+	return nil
+}
+
+func (s *InternalErrorException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *InternalErrorException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *InternalErrorException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
+// Thrown if the identity pool has no role associated for the given auth type
+// (auth/unauth) or if the AssumeRole fails.
+type InvalidIdentityPoolConfigurationException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned for an InvalidIdentityPoolConfigurationException
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s InvalidIdentityPoolConfigurationException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InvalidIdentityPoolConfigurationException) GoString() string {
+	return s.String()
+}
+
+func newErrorInvalidIdentityPoolConfigurationException(v protocol.ResponseMetadata) error {
+	return &InvalidIdentityPoolConfigurationException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *InvalidIdentityPoolConfigurationException) Code() string {
+	return "InvalidIdentityPoolConfigurationException"
+}
+
+// Message returns the exception's message.
+func (s *InvalidIdentityPoolConfigurationException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *InvalidIdentityPoolConfigurationException) OrigErr() error {
+	return nil
+}
+
+func (s *InvalidIdentityPoolConfigurationException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *InvalidIdentityPoolConfigurationException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *InvalidIdentityPoolConfigurationException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
+// Thrown for missing or bad input parameter(s).
+type InvalidParameterException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by an InvalidParameterException.
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s InvalidParameterException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InvalidParameterException) GoString() string {
+	return s.String()
+}
+
+func newErrorInvalidParameterException(v protocol.ResponseMetadata) error {
+	return &InvalidParameterException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *InvalidParameterException) Code() string {
+	return "InvalidParameterException"
+}
+
+// Message returns the exception's message.
+func (s *InvalidParameterException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *InvalidParameterException) OrigErr() error {
+	return nil
+}
+
+func (s *InvalidParameterException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *InvalidParameterException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *InvalidParameterException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
+// Thrown when the total number of user pools has exceeded a preset limit.
+type LimitExceededException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by a LimitExceededException.
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s LimitExceededException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s LimitExceededException) GoString() string {
+	return s.String()
+}
+
+func newErrorLimitExceededException(v protocol.ResponseMetadata) error {
+	return &LimitExceededException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *LimitExceededException) Code() string {
+	return "LimitExceededException"
+}
+
+// Message returns the exception's message.
+func (s *LimitExceededException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *LimitExceededException) OrigErr() error {
+	return nil
+}
+
+func (s *LimitExceededException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *LimitExceededException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *LimitExceededException) RequestID() string {
+	return s.RespMetadata.RequestID
 }
 
 // Input to the ListIdentities action.
@@ -3950,6 +4716,63 @@ func (s *MergeDeveloperIdentitiesOutput) SetIdentityId(v string) *MergeDeveloper
 	return s
 }
 
+// Thrown when a user is not authorized to access the requested resource.
+type NotAuthorizedException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by a NotAuthorizedException
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s NotAuthorizedException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s NotAuthorizedException) GoString() string {
+	return s.String()
+}
+
+func newErrorNotAuthorizedException(v protocol.ResponseMetadata) error {
+	return &NotAuthorizedException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *NotAuthorizedException) Code() string {
+	return "NotAuthorizedException"
+}
+
+// Message returns the exception's message.
+func (s *NotAuthorizedException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *NotAuthorizedException) OrigErr() error {
+	return nil
+}
+
+func (s *NotAuthorizedException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *NotAuthorizedException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *NotAuthorizedException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
 // A provider representing an Amazon Cognito user pool and its client ID.
 type Provider struct {
 	_ struct{} `type:"structure"`
@@ -4015,6 +4838,122 @@ func (s *Provider) SetProviderName(v string) *Provider {
 func (s *Provider) SetServerSideTokenCheck(v bool) *Provider {
 	s.ServerSideTokenCheck = &v
 	return s
+}
+
+// Thrown when a user tries to use a login which is already linked to another
+// account.
+type ResourceConflictException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by a ResourceConflictException.
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s ResourceConflictException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ResourceConflictException) GoString() string {
+	return s.String()
+}
+
+func newErrorResourceConflictException(v protocol.ResponseMetadata) error {
+	return &ResourceConflictException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *ResourceConflictException) Code() string {
+	return "ResourceConflictException"
+}
+
+// Message returns the exception's message.
+func (s *ResourceConflictException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *ResourceConflictException) OrigErr() error {
+	return nil
+}
+
+func (s *ResourceConflictException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *ResourceConflictException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *ResourceConflictException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
+// Thrown when the requested resource (for example, a dataset or record) does
+// not exist.
+type ResourceNotFoundException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// The message returned by a ResourceNotFoundException.
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s ResourceNotFoundException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ResourceNotFoundException) GoString() string {
+	return s.String()
+}
+
+func newErrorResourceNotFoundException(v protocol.ResponseMetadata) error {
+	return &ResourceNotFoundException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *ResourceNotFoundException) Code() string {
+	return "ResourceNotFoundException"
+}
+
+// Message returns the exception's message.
+func (s *ResourceNotFoundException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *ResourceNotFoundException) OrigErr() error {
+	return nil
+}
+
+func (s *ResourceNotFoundException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *ResourceNotFoundException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *ResourceNotFoundException) RequestID() string {
+	return s.RespMetadata.RequestID
 }
 
 // A role mapping.
@@ -4152,7 +5091,7 @@ type SetIdentityPoolRolesInput struct {
 
 	// How users for a specific identity provider are to mapped to roles. This is
 	// a string to RoleMapping object map. The string identifies the identity provider,
-	// for example, "graph.facebook.com" or "cognito-idp-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".
+	// for example, "graph.facebook.com" or "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".
 	//
 	// Up to 25 rules can be specified per identity provider.
 	RoleMappings map[string]*RoleMapping `type:"map"`
@@ -4236,10 +5175,139 @@ func (s SetIdentityPoolRolesOutput) GoString() string {
 	return s.String()
 }
 
+type SetPrincipalTagAttributeMapInput struct {
+	_ struct{} `type:"structure"`
+
+	// The ID of the Identity Pool you want to set attribute mappings for.
+	//
+	// IdentityPoolId is a required field
+	IdentityPoolId *string `min:"1" type:"string" required:"true"`
+
+	// The provider name you want to use for attribute mappings.
+	//
+	// IdentityProviderName is a required field
+	IdentityProviderName *string `min:"1" type:"string" required:"true"`
+
+	// You can use this operation to add principal tags.
+	PrincipalTags map[string]*string `type:"map"`
+
+	// You can use this operation to use default (username and clientID) attribute
+	// mappings.
+	UseDefaults *bool `type:"boolean"`
+}
+
+// String returns the string representation
+func (s SetPrincipalTagAttributeMapInput) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SetPrincipalTagAttributeMapInput) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *SetPrincipalTagAttributeMapInput) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "SetPrincipalTagAttributeMapInput"}
+	if s.IdentityPoolId == nil {
+		invalidParams.Add(request.NewErrParamRequired("IdentityPoolId"))
+	}
+	if s.IdentityPoolId != nil && len(*s.IdentityPoolId) < 1 {
+		invalidParams.Add(request.NewErrParamMinLen("IdentityPoolId", 1))
+	}
+	if s.IdentityProviderName == nil {
+		invalidParams.Add(request.NewErrParamRequired("IdentityProviderName"))
+	}
+	if s.IdentityProviderName != nil && len(*s.IdentityProviderName) < 1 {
+		invalidParams.Add(request.NewErrParamMinLen("IdentityProviderName", 1))
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetIdentityPoolId sets the IdentityPoolId field's value.
+func (s *SetPrincipalTagAttributeMapInput) SetIdentityPoolId(v string) *SetPrincipalTagAttributeMapInput {
+	s.IdentityPoolId = &v
+	return s
+}
+
+// SetIdentityProviderName sets the IdentityProviderName field's value.
+func (s *SetPrincipalTagAttributeMapInput) SetIdentityProviderName(v string) *SetPrincipalTagAttributeMapInput {
+	s.IdentityProviderName = &v
+	return s
+}
+
+// SetPrincipalTags sets the PrincipalTags field's value.
+func (s *SetPrincipalTagAttributeMapInput) SetPrincipalTags(v map[string]*string) *SetPrincipalTagAttributeMapInput {
+	s.PrincipalTags = v
+	return s
+}
+
+// SetUseDefaults sets the UseDefaults field's value.
+func (s *SetPrincipalTagAttributeMapInput) SetUseDefaults(v bool) *SetPrincipalTagAttributeMapInput {
+	s.UseDefaults = &v
+	return s
+}
+
+type SetPrincipalTagAttributeMapOutput struct {
+	_ struct{} `type:"structure"`
+
+	// The ID of the Identity Pool you want to set attribute mappings for.
+	IdentityPoolId *string `min:"1" type:"string"`
+
+	// The provider name you want to use for attribute mappings.
+	IdentityProviderName *string `min:"1" type:"string"`
+
+	// You can use this operation to add principal tags. The PrincipalTagsoperation
+	// enables you to reference user attributes in your IAM permissions policy.
+	PrincipalTags map[string]*string `type:"map"`
+
+	// You can use this operation to select default (username and clientID) attribute
+	// mappings.
+	UseDefaults *bool `type:"boolean"`
+}
+
+// String returns the string representation
+func (s SetPrincipalTagAttributeMapOutput) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s SetPrincipalTagAttributeMapOutput) GoString() string {
+	return s.String()
+}
+
+// SetIdentityPoolId sets the IdentityPoolId field's value.
+func (s *SetPrincipalTagAttributeMapOutput) SetIdentityPoolId(v string) *SetPrincipalTagAttributeMapOutput {
+	s.IdentityPoolId = &v
+	return s
+}
+
+// SetIdentityProviderName sets the IdentityProviderName field's value.
+func (s *SetPrincipalTagAttributeMapOutput) SetIdentityProviderName(v string) *SetPrincipalTagAttributeMapOutput {
+	s.IdentityProviderName = &v
+	return s
+}
+
+// SetPrincipalTags sets the PrincipalTags field's value.
+func (s *SetPrincipalTagAttributeMapOutput) SetPrincipalTags(v map[string]*string) *SetPrincipalTagAttributeMapOutput {
+	s.PrincipalTags = v
+	return s
+}
+
+// SetUseDefaults sets the UseDefaults field's value.
+func (s *SetPrincipalTagAttributeMapOutput) SetUseDefaults(v bool) *SetPrincipalTagAttributeMapOutput {
+	s.UseDefaults = &v
+	return s
+}
+
 type TagResourceInput struct {
 	_ struct{} `type:"structure"`
 
-	// The Amazon Resource Name (ARN) of the identity pool to assign the tags to.
+	// The Amazon Resource Name (ARN) of the identity pool.
 	//
 	// ResourceArn is a required field
 	ResourceArn *string `min:"20" type:"string" required:"true"`
@@ -4303,6 +5371,63 @@ func (s TagResourceOutput) String() string {
 // GoString returns the string representation
 func (s TagResourceOutput) GoString() string {
 	return s.String()
+}
+
+// Thrown when a request is throttled.
+type TooManyRequestsException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	// Message returned by a TooManyRequestsException
+	Message_ *string `locationName:"message" type:"string"`
+}
+
+// String returns the string representation
+func (s TooManyRequestsException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s TooManyRequestsException) GoString() string {
+	return s.String()
+}
+
+func newErrorTooManyRequestsException(v protocol.ResponseMetadata) error {
+	return &TooManyRequestsException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *TooManyRequestsException) Code() string {
+	return "TooManyRequestsException"
+}
+
+// Message returns the exception's message.
+func (s *TooManyRequestsException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *TooManyRequestsException) OrigErr() error {
+	return nil
+}
+
+func (s *TooManyRequestsException) Error() string {
+	return fmt.Sprintf("%s: %s", s.Code(), s.Message())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *TooManyRequestsException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *TooManyRequestsException) RequestID() string {
+	return s.RespMetadata.RequestID
 }
 
 // Input to the UnlinkDeveloperIdentity action.
@@ -4533,8 +5658,7 @@ func (s *UnprocessedIdentityId) SetIdentityId(v string) *UnprocessedIdentityId {
 type UntagResourceInput struct {
 	_ struct{} `type:"structure"`
 
-	// The Amazon Resource Name (ARN) of the identity pool that the tags are assigned
-	// to.
+	// The Amazon Resource Name (ARN) of the identity pool.
 	//
 	// ResourceArn is a required field
 	ResourceArn *string `min:"20" type:"string" required:"true"`
@@ -4608,6 +5732,14 @@ const (
 	AmbiguousRoleResolutionTypeDeny = "Deny"
 )
 
+// AmbiguousRoleResolutionType_Values returns all elements of the AmbiguousRoleResolutionType enum
+func AmbiguousRoleResolutionType_Values() []string {
+	return []string{
+		AmbiguousRoleResolutionTypeAuthenticatedRole,
+		AmbiguousRoleResolutionTypeDeny,
+	}
+}
+
 const (
 	// ErrorCodeAccessDenied is a ErrorCode enum value
 	ErrorCodeAccessDenied = "AccessDenied"
@@ -4615,6 +5747,14 @@ const (
 	// ErrorCodeInternalServerError is a ErrorCode enum value
 	ErrorCodeInternalServerError = "InternalServerError"
 )
+
+// ErrorCode_Values returns all elements of the ErrorCode enum
+func ErrorCode_Values() []string {
+	return []string{
+		ErrorCodeAccessDenied,
+		ErrorCodeInternalServerError,
+	}
+}
 
 const (
 	// MappingRuleMatchTypeEquals is a MappingRuleMatchType enum value
@@ -4630,6 +5770,16 @@ const (
 	MappingRuleMatchTypeNotEqual = "NotEqual"
 )
 
+// MappingRuleMatchType_Values returns all elements of the MappingRuleMatchType enum
+func MappingRuleMatchType_Values() []string {
+	return []string{
+		MappingRuleMatchTypeEquals,
+		MappingRuleMatchTypeContains,
+		MappingRuleMatchTypeStartsWith,
+		MappingRuleMatchTypeNotEqual,
+	}
+}
+
 const (
 	// RoleMappingTypeToken is a RoleMappingType enum value
 	RoleMappingTypeToken = "Token"
@@ -4637,3 +5787,11 @@ const (
 	// RoleMappingTypeRules is a RoleMappingType enum value
 	RoleMappingTypeRules = "Rules"
 )
+
+// RoleMappingType_Values returns all elements of the RoleMappingType enum
+func RoleMappingType_Values() []string {
+	return []string{
+		RoleMappingTypeToken,
+		RoleMappingTypeRules,
+	}
+}

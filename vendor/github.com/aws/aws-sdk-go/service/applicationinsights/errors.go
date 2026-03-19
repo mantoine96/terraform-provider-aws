@@ -2,7 +2,17 @@
 
 package applicationinsights
 
+import (
+	"github.com/aws/aws-sdk-go/private/protocol"
+)
+
 const (
+
+	// ErrCodeAccessDeniedException for service response error code
+	// "AccessDeniedException".
+	//
+	// User does not have permissions to perform this action.
+	ErrCodeAccessDeniedException = "AccessDeniedException"
 
 	// ErrCodeBadRequestException for service response error code
 	// "BadRequestException".
@@ -47,3 +57,14 @@ const (
 	// The parameter is not valid.
 	ErrCodeValidationException = "ValidationException"
 )
+
+var exceptionFromCode = map[string]func(protocol.ResponseMetadata) error{
+	"AccessDeniedException":     newErrorAccessDeniedException,
+	"BadRequestException":       newErrorBadRequestException,
+	"InternalServerException":   newErrorInternalServerException,
+	"ResourceInUseException":    newErrorResourceInUseException,
+	"ResourceNotFoundException": newErrorResourceNotFoundException,
+	"TagsAlreadyExistException": newErrorTagsAlreadyExistException,
+	"TooManyTagsException":      newErrorTooManyTagsException,
+	"ValidationException":       newErrorValidationException,
+}

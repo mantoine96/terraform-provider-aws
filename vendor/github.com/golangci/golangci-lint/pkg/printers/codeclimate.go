@@ -1,19 +1,70 @@
 package printers
 
 import (
-	"context"
-	"crypto/md5" //nolint:gosec
 	"encoding/json"
-	"fmt"
+	"io"
 
 	"github.com/golangci/golangci-lint/pkg/logutils"
 	"github.com/golangci/golangci-lint/pkg/result"
 )
 
-// CodeClimateIssue is a subset of the Code Climate spec - https://github.com/codeclimate/spec/blob/master/SPEC.md#data-types
-// It is just enough to support GitLab CI Code Quality - https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
-type CodeClimateIssue struct {
+const defaultCodeClimateSeverity = "critical"
+
+// CodeClimate prints issues in the Code Climate format.
+// https://github.com/codeclimate/platform/blob/HEAD/spec/analyzers/SPEC.md
+type CodeClimate struct {
+	log       logutils.Log
+	w         io.Writer
+	sanitizer severitySanitizer
+}
+
+func NewCodeClimate(log logutils.Log, w io.Writer) *CodeClimate {
+	return &CodeClimate{
+		log: log.Child(logutils.DebugKeyCodeClimatePrinter),
+		w:   w,
+		sanitizer: severitySanitizer{
+			// https://github.com/codeclimate/platform/blob/HEAD/spec/analyzers/SPEC.md#data-types
+			allowedSeverities: []string{"info", "minor", "major", defaultCodeClimateSeverity, "blocker"},
+			defaultSeverity:   defaultCodeClimateSeverity,
+		},
+	}
+}
+
+func (p *CodeClimate) Print(issues []result.Issue) error {
+	ccIssues := make([]codeClimateIssue, 0, len(issues))
+
+	for i := range issues {
+		issue := issues[i]
+
+		ccIssue := codeClimateIssue{
+			Description: issue.Description(),
+			CheckName:   issue.FromLinter,
+			Severity:    p.sanitizer.Sanitize(issue.Severity),
+			Fingerprint: issue.Fingerprint(),
+		}
+
+		ccIssue.Location.Path = issue.Pos.Filename
+		ccIssue.Location.Lines.Begin = issue.Pos.Line
+
+		ccIssues = append(ccIssues, ccIssue)
+	}
+
+	err := p.sanitizer.Err()
+	if err != nil {
+		p.log.Infof("%v", err)
+	}
+
+	return json.NewEncoder(p.w).Encode(ccIssues)
+}
+
+// codeClimateIssue is a subset of the Code Climate spec.
+// https://github.com/codeclimate/platform/blob/HEAD/spec/analyzers/SPEC.md#data-types
+// It is just enough to support GitLab CI Code Quality.
+// https://docs.gitlab.com/ee/ci/testing/code_quality.html#code-quality-report-format
+type codeClimateIssue struct {
 	Description string `json:"description"`
+	CheckName   string `json:"check_name"`
+	Severity    string `json:"severity,omitempty"`
 	Fingerprint string `json:"fingerprint"`
 	Location    struct {
 		Path  string `json:"path"`
@@ -21,37 +72,4 @@ type CodeClimateIssue struct {
 			Begin int `json:"begin"`
 		} `json:"lines"`
 	} `json:"location"`
-}
-
-type CodeClimate struct {
-}
-
-func NewCodeClimate() *CodeClimate {
-	return &CodeClimate{}
-}
-
-func (p CodeClimate) Print(ctx context.Context, issues []result.Issue) error {
-	allIssues := []CodeClimateIssue{}
-	for ind := range issues {
-		i := &issues[ind]
-		var issue CodeClimateIssue
-		issue.Description = i.FromLinter + ": " + i.Text
-		issue.Location.Path = i.Pos.Filename
-		issue.Location.Lines.Begin = i.Pos.Line
-
-		// Need a checksum of the issue, so we use MD5 of the filename, text, and first line of source
-		hash := md5.New() //nolint:gosec
-		_, _ = hash.Write([]byte(i.Pos.Filename + i.Text + i.SourceLines[0]))
-		issue.Fingerprint = fmt.Sprintf("%X", hash.Sum(nil))
-
-		allIssues = append(allIssues, issue)
-	}
-
-	outputJSON, err := json.Marshal(allIssues)
-	if err != nil {
-		return err
-	}
-
-	fmt.Fprint(logutils.StdOut, string(outputJSON))
-	return nil
 }

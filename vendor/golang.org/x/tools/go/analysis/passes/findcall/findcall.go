@@ -2,16 +2,16 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// The findcall package defines an Analyzer that serves as a trivial
+// Package findcall defines an Analyzer that serves as a trivial
 // example and test of the Analysis API. It reports a diagnostic for
 // every call to a function or method of the name specified by its
 // -name flag. It also exports a fact for each declaration that
 // matches the name, plus a package-level fact if the package contained
 // one or more such declarations.
-
 package findcall
 
 import (
+	"fmt"
 	"go/ast"
 	"go/types"
 
@@ -26,6 +26,7 @@ of a particular name.`
 var Analyzer = &analysis.Analyzer{
 	Name:             "findcall",
 	Doc:              Doc,
+	URL:              "https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/findcall",
 	Run:              run,
 	RunDespiteErrors: true,
 	FactTypes:        []analysis.Fact{new(foundFact)},
@@ -37,7 +38,7 @@ func init() {
 	Analyzer.Flags.StringVar(&name, "name", name, "name of the function to find")
 }
 
-func run(pass *analysis.Pass) (interface{}, error) {
+func run(pass *analysis.Pass) (any, error) {
 	for _, f := range pass.Files {
 		ast.Inspect(f, func(n ast.Node) bool {
 			if call, ok := n.(*ast.CallExpr); ok {
@@ -49,7 +50,18 @@ func run(pass *analysis.Pass) (interface{}, error) {
 					id = fun.Sel
 				}
 				if id != nil && !pass.TypesInfo.Types[id].IsType() && id.Name == name {
-					pass.Reportf(call.Lparen, "call of %s(...)", id.Name)
+					pass.Report(analysis.Diagnostic{
+						Pos:     call.Lparen,
+						Message: fmt.Sprintf("call of %s(...)", id.Name),
+						SuggestedFixes: []analysis.SuggestedFix{{
+							Message: fmt.Sprintf("Add '_TEST_'"),
+							TextEdits: []analysis.TextEdit{{
+								Pos:     call.Lparen,
+								End:     call.Lparen,
+								NewText: []byte("_TEST_"),
+							}},
+						}},
+					})
 				}
 			}
 			return true

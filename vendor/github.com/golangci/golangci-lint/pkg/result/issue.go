@@ -1,8 +1,11 @@
 package result
 
 import (
+	"crypto/md5" //nolint:gosec // for md5 hash
+	"fmt"
 	"go/token"
 
+	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/packages"
 )
 
@@ -10,37 +13,37 @@ type Range struct {
 	From, To int
 }
 
-type Replacement struct {
-	NeedOnlyDelete bool     // need to delete all lines of the issue without replacement with new lines
-	NewLines       []string // is NeedDelete is false it's the replacement lines
-	Inline         *InlineFix
-}
-
-type InlineFix struct {
-	StartCol  int // zero-based
-	Length    int // length of chunk to be replaced
-	NewString string
-}
-
 type Issue struct {
 	FromLinter string
 	Text       string
 
+	Severity string
+
 	// Source lines of a code with the issue to show
 	SourceLines []string
-
-	// If we know how to fix the issue we can provide replacement lines
-	Replacement *Replacement
 
 	// Pkg is needed for proper caching of linting results
 	Pkg *packages.Package `json:"-"`
 
-	LineRange *Range `json:",omitempty"`
-
 	Pos token.Position
+
+	LineRange *Range `json:",omitempty"`
 
 	// HunkPos is used only when golangci-lint is run over a diff
 	HunkPos int `json:",omitempty"`
+
+	// If we know how to fix the issue we can provide replacement lines
+	SuggestedFixes []analysis.SuggestedFix `json:",omitempty"`
+
+	// If we are expecting a nolint (because this is from nolintlint), record the expected linter
+	ExpectNoLint         bool
+	ExpectedNoLintLinter string
+
+	// Only for Diff processor needs.
+	WorkingDirectoryRelativePath string `json:"-"`
+
+	// Only for processor that need relative paths evaluation.
+	RelativePath string `json:"-"`
 }
 
 func (i *Issue) FilePath() string {
@@ -71,4 +74,20 @@ func (i *Issue) GetLineRange() Range {
 	}
 
 	return *i.LineRange
+}
+
+func (i *Issue) Description() string {
+	return fmt.Sprintf("%s: %s", i.FromLinter, i.Text)
+}
+
+func (i *Issue) Fingerprint() string {
+	firstLine := ""
+	if len(i.SourceLines) > 0 {
+		firstLine = i.SourceLines[0]
+	}
+
+	hash := md5.New() //nolint:gosec // we don't need a strong hash here
+	_, _ = fmt.Fprintf(hash, "%s%s%s", i.Pos.Filename, i.Text, firstLine)
+
+	return fmt.Sprintf("%X", hash.Sum(nil))
 }
