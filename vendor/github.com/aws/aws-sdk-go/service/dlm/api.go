@@ -67,14 +67,14 @@ func (c *DLM) CreateLifecyclePolicyRequest(input *CreateLifecyclePolicyInput) (r
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation CreateLifecyclePolicy for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInvalidRequestException "InvalidRequestException"
+// Returned Error Types:
+//   * InvalidRequestException
 //   Bad request. The request is missing required parameters or has invalid parameters.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   The request failed because a limit was exceeded.
 //
-//   * ErrCodeInternalServerException "InternalServerException"
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/CreateLifecyclePolicy
@@ -154,14 +154,14 @@ func (c *DLM) DeleteLifecyclePolicyRequest(input *DeleteLifecyclePolicyInput) (r
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation DeleteLifecyclePolicy for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+// Returned Error Types:
+//   * ResourceNotFoundException
 //   A requested resource was not found.
 //
-//   * ErrCodeInternalServerException "InternalServerException"
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   The request failed because a limit was exceeded.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/DeleteLifecyclePolicy
@@ -241,17 +241,17 @@ func (c *DLM) GetLifecyclePoliciesRequest(input *GetLifecyclePoliciesInput) (req
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation GetLifecyclePolicies for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+// Returned Error Types:
+//   * ResourceNotFoundException
 //   A requested resource was not found.
 //
-//   * ErrCodeInvalidRequestException "InvalidRequestException"
+//   * InvalidRequestException
 //   Bad request. The request is missing required parameters or has invalid parameters.
 //
-//   * ErrCodeInternalServerException "InternalServerException"
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   The request failed because a limit was exceeded.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/GetLifecyclePolicies
@@ -329,14 +329,14 @@ func (c *DLM) GetLifecyclePolicyRequest(input *GetLifecyclePolicyInput) (req *re
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation GetLifecyclePolicy for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+// Returned Error Types:
+//   * ResourceNotFoundException
 //   A requested resource was not found.
 //
-//   * ErrCodeInternalServerException "InternalServerException"
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   The request failed because a limit was exceeded.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/GetLifecyclePolicy
@@ -414,14 +414,14 @@ func (c *DLM) ListTagsForResourceRequest(input *ListTagsForResourceInput) (req *
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation ListTagsForResource for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInternalServerException "InternalServerException"
+// Returned Error Types:
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
-//   * ErrCodeInvalidRequestException "InvalidRequestException"
+//   * InvalidRequestException
 //   Bad request. The request is missing required parameters or has invalid parameters.
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   A requested resource was not found.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/ListTagsForResource
@@ -500,14 +500,14 @@ func (c *DLM) TagResourceRequest(input *TagResourceInput) (req *request.Request,
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation TagResource for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInternalServerException "InternalServerException"
+// Returned Error Types:
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
-//   * ErrCodeInvalidRequestException "InvalidRequestException"
+//   * InvalidRequestException
 //   Bad request. The request is missing required parameters or has invalid parameters.
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   A requested resource was not found.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/TagResource
@@ -586,14 +586,14 @@ func (c *DLM) UntagResourceRequest(input *UntagResourceInput) (req *request.Requ
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation UntagResource for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeInternalServerException "InternalServerException"
+// Returned Error Types:
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
-//   * ErrCodeInvalidRequestException "InvalidRequestException"
+//   * InvalidRequestException
 //   Bad request. The request is missing required parameters or has invalid parameters.
 //
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+//   * ResourceNotFoundException
 //   A requested resource was not found.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/UntagResource
@@ -672,17 +672,17 @@ func (c *DLM) UpdateLifecyclePolicyRequest(input *UpdateLifecyclePolicyInput) (r
 // See the AWS API reference guide for Amazon Data Lifecycle Manager's
 // API operation UpdateLifecyclePolicy for usage and error information.
 //
-// Returned Error Codes:
-//   * ErrCodeResourceNotFoundException "ResourceNotFoundException"
+// Returned Error Types:
+//   * ResourceNotFoundException
 //   A requested resource was not found.
 //
-//   * ErrCodeInvalidRequestException "InvalidRequestException"
+//   * InvalidRequestException
 //   Bad request. The request is missing required parameters or has invalid parameters.
 //
-//   * ErrCodeInternalServerException "InternalServerException"
+//   * InternalServerException
 //   The service failed in an unexpected way.
 //
-//   * ErrCodeLimitExceededException "LimitExceededException"
+//   * LimitExceededException
 //   The request failed because a limit was exceeded.
 //
 // See also, https://docs.aws.amazon.com/goto/WebAPI/dlm-2018-01-12/UpdateLifecyclePolicy
@@ -705,6 +705,69 @@ func (c *DLM) UpdateLifecyclePolicyWithContext(ctx aws.Context, input *UpdateLif
 	req.SetContext(ctx)
 	req.ApplyOptions(opts...)
 	return out, req.Send()
+}
+
+// Specifies an action for an event-based policy.
+type Action struct {
+	_ struct{} `type:"structure"`
+
+	// The rule for copying shared snapshots across Regions.
+	//
+	// CrossRegionCopy is a required field
+	CrossRegionCopy []*CrossRegionCopyAction `type:"list" required:"true"`
+
+	// A descriptive name for the action.
+	//
+	// Name is a required field
+	Name *string `type:"string" required:"true"`
+}
+
+// String returns the string representation
+func (s Action) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s Action) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *Action) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "Action"}
+	if s.CrossRegionCopy == nil {
+		invalidParams.Add(request.NewErrParamRequired("CrossRegionCopy"))
+	}
+	if s.Name == nil {
+		invalidParams.Add(request.NewErrParamRequired("Name"))
+	}
+	if s.CrossRegionCopy != nil {
+		for i, v := range s.CrossRegionCopy {
+			if v == nil {
+				continue
+			}
+			if err := v.Validate(); err != nil {
+				invalidParams.AddNested(fmt.Sprintf("%s[%v]", "CrossRegionCopy", i), err.(request.ErrInvalidParams))
+			}
+		}
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetCrossRegionCopy sets the CrossRegionCopy field's value.
+func (s *Action) SetCrossRegionCopy(v []*CrossRegionCopyAction) *Action {
+	s.CrossRegionCopy = v
+	return s
+}
+
+// SetName sets the Name field's value.
+func (s *Action) SetName(v string) *Action {
+	s.Name = &v
+	return s
 }
 
 type CreateLifecyclePolicyInput struct {
@@ -830,23 +893,29 @@ func (s *CreateLifecyclePolicyOutput) SetPolicyId(v string) *CreateLifecyclePoli
 }
 
 // Specifies when to create snapshots of EBS volumes.
+//
+// You must specify either a Cron expression or an interval, interval unit,
+// and start time. You cannot specify both.
 type CreateRule struct {
 	_ struct{} `type:"structure"`
 
-	// The interval between snapshots. The supported values are 2, 3, 4, 6, 8, 12,
-	// and 24.
-	//
-	// Interval is a required field
-	Interval *int64 `min:"1" type:"integer" required:"true"`
+	// The schedule, as a Cron expression. The schedule interval must be between
+	// 1 hour and 1 year. For more information, see Cron expressions (https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
+	// in the Amazon CloudWatch User Guide.
+	CronExpression *string `min:"17" type:"string"`
+
+	// The interval between snapshots. The supported values are 1, 2, 3, 4, 6, 8,
+	// 12, and 24.
+	Interval *int64 `min:"1" type:"integer"`
 
 	// The interval unit.
-	//
-	// IntervalUnit is a required field
-	IntervalUnit *string `type:"string" required:"true" enum:"IntervalUnitValues"`
+	IntervalUnit *string `type:"string" enum:"IntervalUnitValues"`
 
 	// The time, in UTC, to start the operation. The supported format is hh:mm.
 	//
 	// The operation occurs within a one-hour window following the specified time.
+	// If you do not specify a time, Amazon DLM selects a time within the next 24
+	// hours.
 	Times []*string `type:"list"`
 }
 
@@ -863,20 +932,23 @@ func (s CreateRule) GoString() string {
 // Validate inspects the fields of the type to determine if they are valid.
 func (s *CreateRule) Validate() error {
 	invalidParams := request.ErrInvalidParams{Context: "CreateRule"}
-	if s.Interval == nil {
-		invalidParams.Add(request.NewErrParamRequired("Interval"))
+	if s.CronExpression != nil && len(*s.CronExpression) < 17 {
+		invalidParams.Add(request.NewErrParamMinLen("CronExpression", 17))
 	}
 	if s.Interval != nil && *s.Interval < 1 {
 		invalidParams.Add(request.NewErrParamMinValue("Interval", 1))
-	}
-	if s.IntervalUnit == nil {
-		invalidParams.Add(request.NewErrParamRequired("IntervalUnit"))
 	}
 
 	if invalidParams.Len() > 0 {
 		return invalidParams
 	}
 	return nil
+}
+
+// SetCronExpression sets the CronExpression field's value.
+func (s *CreateRule) SetCronExpression(v string) *CreateRule {
+	s.CronExpression = &v
+	return s
 }
 
 // SetInterval sets the Interval field's value.
@@ -894,6 +966,215 @@ func (s *CreateRule) SetIntervalUnit(v string) *CreateRule {
 // SetTimes sets the Times field's value.
 func (s *CreateRule) SetTimes(v []*string) *CreateRule {
 	s.Times = v
+	return s
+}
+
+// Specifies a rule for copying shared snapshots across Regions.
+type CrossRegionCopyAction struct {
+	_ struct{} `type:"structure"`
+
+	// The encryption settings for the copied snapshot.
+	//
+	// EncryptionConfiguration is a required field
+	EncryptionConfiguration *EncryptionConfiguration `type:"structure" required:"true"`
+
+	// Specifies the retention rule for cross-Region snapshot copies.
+	RetainRule *CrossRegionCopyRetainRule `type:"structure"`
+
+	// The target Region.
+	//
+	// Target is a required field
+	Target *string `type:"string" required:"true"`
+}
+
+// String returns the string representation
+func (s CrossRegionCopyAction) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CrossRegionCopyAction) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *CrossRegionCopyAction) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "CrossRegionCopyAction"}
+	if s.EncryptionConfiguration == nil {
+		invalidParams.Add(request.NewErrParamRequired("EncryptionConfiguration"))
+	}
+	if s.Target == nil {
+		invalidParams.Add(request.NewErrParamRequired("Target"))
+	}
+	if s.EncryptionConfiguration != nil {
+		if err := s.EncryptionConfiguration.Validate(); err != nil {
+			invalidParams.AddNested("EncryptionConfiguration", err.(request.ErrInvalidParams))
+		}
+	}
+	if s.RetainRule != nil {
+		if err := s.RetainRule.Validate(); err != nil {
+			invalidParams.AddNested("RetainRule", err.(request.ErrInvalidParams))
+		}
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetEncryptionConfiguration sets the EncryptionConfiguration field's value.
+func (s *CrossRegionCopyAction) SetEncryptionConfiguration(v *EncryptionConfiguration) *CrossRegionCopyAction {
+	s.EncryptionConfiguration = v
+	return s
+}
+
+// SetRetainRule sets the RetainRule field's value.
+func (s *CrossRegionCopyAction) SetRetainRule(v *CrossRegionCopyRetainRule) *CrossRegionCopyAction {
+	s.RetainRule = v
+	return s
+}
+
+// SetTarget sets the Target field's value.
+func (s *CrossRegionCopyAction) SetTarget(v string) *CrossRegionCopyAction {
+	s.Target = &v
+	return s
+}
+
+// Specifies the retention rule for cross-Region snapshot copies.
+type CrossRegionCopyRetainRule struct {
+	_ struct{} `type:"structure"`
+
+	// The amount of time to retain each snapshot. The maximum is 100 years. This
+	// is equivalent to 1200 months, 5200 weeks, or 36500 days.
+	Interval *int64 `min:"1" type:"integer"`
+
+	// The unit of time for time-based retention.
+	IntervalUnit *string `type:"string" enum:"RetentionIntervalUnitValues"`
+}
+
+// String returns the string representation
+func (s CrossRegionCopyRetainRule) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CrossRegionCopyRetainRule) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *CrossRegionCopyRetainRule) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "CrossRegionCopyRetainRule"}
+	if s.Interval != nil && *s.Interval < 1 {
+		invalidParams.Add(request.NewErrParamMinValue("Interval", 1))
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetInterval sets the Interval field's value.
+func (s *CrossRegionCopyRetainRule) SetInterval(v int64) *CrossRegionCopyRetainRule {
+	s.Interval = &v
+	return s
+}
+
+// SetIntervalUnit sets the IntervalUnit field's value.
+func (s *CrossRegionCopyRetainRule) SetIntervalUnit(v string) *CrossRegionCopyRetainRule {
+	s.IntervalUnit = &v
+	return s
+}
+
+// Specifies a rule for cross-Region snapshot copies.
+type CrossRegionCopyRule struct {
+	_ struct{} `type:"structure"`
+
+	// The Amazon Resource Name (ARN) of the AWS KMS customer master key (CMK) to
+	// use for EBS encryption. If this parameter is not specified, your AWS managed
+	// CMK for EBS is used.
+	CmkArn *string `type:"string"`
+
+	// Copy all user-defined tags from the source snapshot to the copied snapshot.
+	CopyTags *bool `type:"boolean"`
+
+	// To encrypt a copy of an unencrypted snapshot if encryption by default is
+	// not enabled, enable encryption using this parameter. Copies of encrypted
+	// snapshots are encrypted, even if this parameter is false or if encryption
+	// by default is not enabled.
+	//
+	// Encrypted is a required field
+	Encrypted *bool `type:"boolean" required:"true"`
+
+	// The retention rule.
+	RetainRule *CrossRegionCopyRetainRule `type:"structure"`
+
+	// The target Region.
+	//
+	// TargetRegion is a required field
+	TargetRegion *string `type:"string" required:"true"`
+}
+
+// String returns the string representation
+func (s CrossRegionCopyRule) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s CrossRegionCopyRule) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *CrossRegionCopyRule) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "CrossRegionCopyRule"}
+	if s.Encrypted == nil {
+		invalidParams.Add(request.NewErrParamRequired("Encrypted"))
+	}
+	if s.TargetRegion == nil {
+		invalidParams.Add(request.NewErrParamRequired("TargetRegion"))
+	}
+	if s.RetainRule != nil {
+		if err := s.RetainRule.Validate(); err != nil {
+			invalidParams.AddNested("RetainRule", err.(request.ErrInvalidParams))
+		}
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetCmkArn sets the CmkArn field's value.
+func (s *CrossRegionCopyRule) SetCmkArn(v string) *CrossRegionCopyRule {
+	s.CmkArn = &v
+	return s
+}
+
+// SetCopyTags sets the CopyTags field's value.
+func (s *CrossRegionCopyRule) SetCopyTags(v bool) *CrossRegionCopyRule {
+	s.CopyTags = &v
+	return s
+}
+
+// SetEncrypted sets the Encrypted field's value.
+func (s *CrossRegionCopyRule) SetEncrypted(v bool) *CrossRegionCopyRule {
+	s.Encrypted = &v
+	return s
+}
+
+// SetRetainRule sets the RetainRule field's value.
+func (s *CrossRegionCopyRule) SetRetainRule(v *CrossRegionCopyRetainRule) *CrossRegionCopyRule {
+	s.RetainRule = v
+	return s
+}
+
+// SetTargetRegion sets the TargetRegion field's value.
+func (s *CrossRegionCopyRule) SetTargetRegion(v string) *CrossRegionCopyRule {
+	s.TargetRegion = &v
 	return s
 }
 
@@ -950,6 +1231,190 @@ func (s DeleteLifecyclePolicyOutput) String() string {
 // GoString returns the string representation
 func (s DeleteLifecyclePolicyOutput) GoString() string {
 	return s.String()
+}
+
+// Specifies the encryption settings for shared snapshots that are copied across
+// Regions.
+type EncryptionConfiguration struct {
+	_ struct{} `type:"structure"`
+
+	// The Amazon Resource Name (ARN) of the AWS KMS customer master key (CMK) to
+	// use for EBS encryption. If this parameter is not specified, your AWS managed
+	// CMK for EBS is used.
+	CmkArn *string `type:"string"`
+
+	// To encrypt a copy of an unencrypted snapshot when encryption by default is
+	// not enabled, enable encryption using this parameter. Copies of encrypted
+	// snapshots are encrypted, even if this parameter is false or when encryption
+	// by default is not enabled.
+	//
+	// Encrypted is a required field
+	Encrypted *bool `type:"boolean" required:"true"`
+}
+
+// String returns the string representation
+func (s EncryptionConfiguration) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s EncryptionConfiguration) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *EncryptionConfiguration) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "EncryptionConfiguration"}
+	if s.Encrypted == nil {
+		invalidParams.Add(request.NewErrParamRequired("Encrypted"))
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetCmkArn sets the CmkArn field's value.
+func (s *EncryptionConfiguration) SetCmkArn(v string) *EncryptionConfiguration {
+	s.CmkArn = &v
+	return s
+}
+
+// SetEncrypted sets the Encrypted field's value.
+func (s *EncryptionConfiguration) SetEncrypted(v bool) *EncryptionConfiguration {
+	s.Encrypted = &v
+	return s
+}
+
+// Specifies an event that triggers an event-based policy.
+type EventParameters struct {
+	_ struct{} `type:"structure"`
+
+	// The snapshot description that can trigger the policy. The description pattern
+	// is specified using a regular expression. The policy runs only if a snapshot
+	// with a description that matches the specified pattern is shared with your
+	// account.
+	//
+	// For example, specifying ^.*Created for policy: policy-1234567890abcdef0.*$
+	// configures the policy to run only if snapshots created by policy policy-1234567890abcdef0
+	// are shared with your account.
+	//
+	// DescriptionRegex is a required field
+	DescriptionRegex *string `type:"string" required:"true"`
+
+	// The type of event. Currently, only snapshot sharing events are supported.
+	//
+	// EventType is a required field
+	EventType *string `type:"string" required:"true" enum:"EventTypeValues"`
+
+	// The IDs of the AWS accounts that can trigger policy by sharing snapshots
+	// with your account. The policy only runs if one of the specified AWS accounts
+	// shares a snapshot with your account.
+	//
+	// SnapshotOwner is a required field
+	SnapshotOwner []*string `type:"list" required:"true"`
+}
+
+// String returns the string representation
+func (s EventParameters) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s EventParameters) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *EventParameters) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "EventParameters"}
+	if s.DescriptionRegex == nil {
+		invalidParams.Add(request.NewErrParamRequired("DescriptionRegex"))
+	}
+	if s.EventType == nil {
+		invalidParams.Add(request.NewErrParamRequired("EventType"))
+	}
+	if s.SnapshotOwner == nil {
+		invalidParams.Add(request.NewErrParamRequired("SnapshotOwner"))
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetDescriptionRegex sets the DescriptionRegex field's value.
+func (s *EventParameters) SetDescriptionRegex(v string) *EventParameters {
+	s.DescriptionRegex = &v
+	return s
+}
+
+// SetEventType sets the EventType field's value.
+func (s *EventParameters) SetEventType(v string) *EventParameters {
+	s.EventType = &v
+	return s
+}
+
+// SetSnapshotOwner sets the SnapshotOwner field's value.
+func (s *EventParameters) SetSnapshotOwner(v []*string) *EventParameters {
+	s.SnapshotOwner = v
+	return s
+}
+
+// Specifies an event that triggers an event-based policy.
+type EventSource struct {
+	_ struct{} `type:"structure"`
+
+	// Information about the event.
+	Parameters *EventParameters `type:"structure"`
+
+	// The source of the event. Currently only managed AWS CloudWatch Events rules
+	// are supported.
+	//
+	// Type is a required field
+	Type *string `type:"string" required:"true" enum:"EventSourceValues"`
+}
+
+// String returns the string representation
+func (s EventSource) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s EventSource) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *EventSource) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "EventSource"}
+	if s.Type == nil {
+		invalidParams.Add(request.NewErrParamRequired("Type"))
+	}
+	if s.Parameters != nil {
+		if err := s.Parameters.Validate(); err != nil {
+			invalidParams.AddNested("Parameters", err.(request.ErrInvalidParams))
+		}
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetParameters sets the Parameters field's value.
+func (s *EventSource) SetParameters(v *EventParameters) *EventSource {
+	s.Parameters = v
+	return s
+}
+
+// SetType sets the Type field's value.
+func (s *EventSource) SetType(v string) *EventSource {
+	s.Type = &v
+	return s
 }
 
 // Specifies a rule for enabling fast snapshot restore. You can enable fast
@@ -1198,6 +1663,128 @@ func (s *GetLifecyclePolicyOutput) SetPolicy(v *LifecyclePolicy) *GetLifecyclePo
 	return s
 }
 
+// The service failed in an unexpected way.
+type InternalServerException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	Code_ *string `locationName:"Code" type:"string"`
+
+	Message_ *string `locationName:"Message" type:"string"`
+}
+
+// String returns the string representation
+func (s InternalServerException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InternalServerException) GoString() string {
+	return s.String()
+}
+
+func newErrorInternalServerException(v protocol.ResponseMetadata) error {
+	return &InternalServerException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *InternalServerException) Code() string {
+	return "InternalServerException"
+}
+
+// Message returns the exception's message.
+func (s *InternalServerException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *InternalServerException) OrigErr() error {
+	return nil
+}
+
+func (s *InternalServerException) Error() string {
+	return fmt.Sprintf("%s: %s\n%s", s.Code(), s.Message(), s.String())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *InternalServerException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *InternalServerException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
+// Bad request. The request is missing required parameters or has invalid parameters.
+type InvalidRequestException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	Code_ *string `locationName:"Code" type:"string"`
+
+	Message_ *string `locationName:"Message" type:"string"`
+
+	// The request included parameters that cannot be provided together.
+	MutuallyExclusiveParameters []*string `type:"list"`
+
+	// The request omitted one or more required parameters.
+	RequiredParameters []*string `type:"list"`
+}
+
+// String returns the string representation
+func (s InvalidRequestException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s InvalidRequestException) GoString() string {
+	return s.String()
+}
+
+func newErrorInvalidRequestException(v protocol.ResponseMetadata) error {
+	return &InvalidRequestException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *InvalidRequestException) Code() string {
+	return "InvalidRequestException"
+}
+
+// Message returns the exception's message.
+func (s *InvalidRequestException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *InvalidRequestException) OrigErr() error {
+	return nil
+}
+
+func (s *InvalidRequestException) Error() string {
+	return fmt.Sprintf("%s: %s\n%s", s.Code(), s.Message(), s.String())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *InvalidRequestException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *InvalidRequestException) RequestID() string {
+	return s.RespMetadata.RequestID
+}
+
 // Detailed information about a lifecycle policy.
 type LifecyclePolicy struct {
 	_ struct{} `type:"structure"`
@@ -1314,6 +1901,11 @@ type LifecyclePolicySummary struct {
 	// The identifier of the lifecycle policy.
 	PolicyId *string `type:"string"`
 
+	// The type of policy. EBS_SNAPSHOT_MANAGEMENT indicates that the policy manages
+	// the lifecycle of Amazon EBS snapshots. IMAGE_MANAGEMENT indicates that the
+	// policy manages the lifecycle of EBS-backed AMIs.
+	PolicyType *string `type:"string" enum:"PolicyTypeValues"`
+
 	// The activation state of the lifecycle policy.
 	State *string `type:"string" enum:"GettablePolicyStateValues"`
 
@@ -1343,6 +1935,12 @@ func (s *LifecyclePolicySummary) SetPolicyId(v string) *LifecyclePolicySummary {
 	return s
 }
 
+// SetPolicyType sets the PolicyType field's value.
+func (s *LifecyclePolicySummary) SetPolicyType(v string) *LifecyclePolicySummary {
+	s.PolicyType = &v
+	return s
+}
+
 // SetState sets the State field's value.
 func (s *LifecyclePolicySummary) SetState(v string) *LifecyclePolicySummary {
 	s.State = &v
@@ -1353,6 +1951,67 @@ func (s *LifecyclePolicySummary) SetState(v string) *LifecyclePolicySummary {
 func (s *LifecyclePolicySummary) SetTags(v map[string]*string) *LifecyclePolicySummary {
 	s.Tags = v
 	return s
+}
+
+// The request failed because a limit was exceeded.
+type LimitExceededException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	Code_ *string `locationName:"Code" type:"string"`
+
+	Message_ *string `locationName:"Message" type:"string"`
+
+	// Value is the type of resource for which a limit was exceeded.
+	ResourceType *string `type:"string"`
+}
+
+// String returns the string representation
+func (s LimitExceededException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s LimitExceededException) GoString() string {
+	return s.String()
+}
+
+func newErrorLimitExceededException(v protocol.ResponseMetadata) error {
+	return &LimitExceededException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *LimitExceededException) Code() string {
+	return "LimitExceededException"
+}
+
+// Message returns the exception's message.
+func (s *LimitExceededException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *LimitExceededException) OrigErr() error {
+	return nil
+}
+
+func (s *LimitExceededException) Error() string {
+	return fmt.Sprintf("%s: %s\n%s", s.Code(), s.Message(), s.String())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *LimitExceededException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *LimitExceededException) RequestID() string {
+	return s.RespMetadata.RequestID
 }
 
 type ListTagsForResourceInput struct {
@@ -1419,15 +2078,22 @@ func (s *ListTagsForResourceOutput) SetTags(v map[string]*string) *ListTagsForRe
 	return s
 }
 
-// Optional parameters that can be added to the policy. The set of valid parameters
-// depends on the combination of policyType and resourceType values.
+// Specifies optional parameters to add to a policy. The set of valid parameters
+// depends on the combination of policy type and resource type.
 type Parameters struct {
 	_ struct{} `type:"structure"`
 
-	// When executing an EBS Snapshot Management – Instance policy, execute all
-	// CreateSnapshots calls with the excludeBootVolume set to the supplied field.
-	// Defaults to false. Only valid for EBS Snapshot Management – Instance policies.
+	// [EBS Snapshot Management – Instance policies only] Indicates whether to
+	// exclude the root volume from snapshots created using CreateSnapshots (https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSnapshots.html).
+	// The default is false.
 	ExcludeBootVolume *bool `type:"boolean"`
+
+	// Applies to AMI lifecycle policies only. Indicates whether targeted instances
+	// are rebooted when the lifecycle policy runs. true indicates that targeted
+	// instances are not rebooted when the policy runs. false indicates that target
+	// instances are rebooted when the policy runs. The default is true (instances
+	// are not rebooted).
+	NoReboot *bool `type:"boolean"`
 }
 
 // String returns the string representation
@@ -1446,24 +2112,65 @@ func (s *Parameters) SetExcludeBootVolume(v bool) *Parameters {
 	return s
 }
 
+// SetNoReboot sets the NoReboot field's value.
+func (s *Parameters) SetNoReboot(v bool) *Parameters {
+	s.NoReboot = &v
+	return s
+}
+
 // Specifies the configuration of a lifecycle policy.
 type PolicyDetails struct {
 	_ struct{} `type:"structure"`
 
-	// A set of optional parameters that can be provided by the policy.
+	// The actions to be performed when the event-based policy is triggered. You
+	// can specify only one action per policy.
+	//
+	// This parameter is required for event-based policies only. If you are creating
+	// a snapshot or AMI policy, omit this parameter.
+	Actions []*Action `min:"1" type:"list"`
+
+	// The event that triggers the event-based policy.
+	//
+	// This parameter is required for event-based policies only. If you are creating
+	// a snapshot or AMI policy, omit this parameter.
+	EventSource *EventSource `type:"structure"`
+
+	// A set of optional parameters for snapshot and AMI lifecycle policies.
+	//
+	// This parameter is required for snapshot and AMI policies only. If you are
+	// creating an event-based policy, omit this parameter.
 	Parameters *Parameters `type:"structure"`
 
-	// This field determines the valid target resource types and actions a policy
-	// can manage. This field defaults to EBS_SNAPSHOT_MANAGEMENT if not present.
+	// The valid target resource types and actions a policy can manage. Specify
+	// EBS_SNAPSHOT_MANAGEMENT to create a lifecycle policy that manages the lifecycle
+	// of Amazon EBS snapshots. Specify IMAGE_MANAGEMENT to create a lifecycle policy
+	// that manages the lifecycle of EBS-backed AMIs. Specify EVENT_BASED_POLICY
+	// to create an event-based policy that performs specific actions when a defined
+	// event occurs in your AWS account.
+	//
+	// The default is EBS_SNAPSHOT_MANAGEMENT.
 	PolicyType *string `type:"string" enum:"PolicyTypeValues"`
 
-	// The resource type.
+	// The target resource type for snapshot and AMI lifecycle policies. Use VOLUME
+	// to create snapshots of individual volumes or use INSTANCE to create multi-volume
+	// snapshots from the volumes for an instance.
+	//
+	// This parameter is required for snapshot and AMI policies only. If you are
+	// creating an event-based policy, omit this parameter.
 	ResourceTypes []*string `min:"1" type:"list"`
 
-	// The schedule of policy-defined actions.
+	// The schedules of policy-defined actions for snapshot and AMI lifecycle policies.
+	// A policy can have up to four schedules—one mandatory schedule and up to
+	// three optional schedules.
+	//
+	// This parameter is required for snapshot and AMI policies only. If you are
+	// creating an event-based policy, omit this parameter.
 	Schedules []*Schedule `min:"1" type:"list"`
 
 	// The single tag that identifies targeted resources for this policy.
+	//
+	// This parameter is required for snapshot and AMI policies only. If you are
+	// creating an event-based policy, omit this parameter.
 	TargetTags []*Tag `min:"1" type:"list"`
 }
 
@@ -1480,6 +2187,9 @@ func (s PolicyDetails) GoString() string {
 // Validate inspects the fields of the type to determine if they are valid.
 func (s *PolicyDetails) Validate() error {
 	invalidParams := request.ErrInvalidParams{Context: "PolicyDetails"}
+	if s.Actions != nil && len(s.Actions) < 1 {
+		invalidParams.Add(request.NewErrParamMinLen("Actions", 1))
+	}
 	if s.ResourceTypes != nil && len(s.ResourceTypes) < 1 {
 		invalidParams.Add(request.NewErrParamMinLen("ResourceTypes", 1))
 	}
@@ -1488,6 +2198,21 @@ func (s *PolicyDetails) Validate() error {
 	}
 	if s.TargetTags != nil && len(s.TargetTags) < 1 {
 		invalidParams.Add(request.NewErrParamMinLen("TargetTags", 1))
+	}
+	if s.Actions != nil {
+		for i, v := range s.Actions {
+			if v == nil {
+				continue
+			}
+			if err := v.Validate(); err != nil {
+				invalidParams.AddNested(fmt.Sprintf("%s[%v]", "Actions", i), err.(request.ErrInvalidParams))
+			}
+		}
+	}
+	if s.EventSource != nil {
+		if err := s.EventSource.Validate(); err != nil {
+			invalidParams.AddNested("EventSource", err.(request.ErrInvalidParams))
+		}
 	}
 	if s.Schedules != nil {
 		for i, v := range s.Schedules {
@@ -1514,6 +2239,18 @@ func (s *PolicyDetails) Validate() error {
 		return invalidParams
 	}
 	return nil
+}
+
+// SetActions sets the Actions field's value.
+func (s *PolicyDetails) SetActions(v []*Action) *PolicyDetails {
+	s.Actions = v
+	return s
+}
+
+// SetEventSource sets the EventSource field's value.
+func (s *PolicyDetails) SetEventSource(v *EventSource) *PolicyDetails {
+	s.EventSource = v
+	return s
 }
 
 // SetParameters sets the Parameters field's value.
@@ -1544,6 +2281,70 @@ func (s *PolicyDetails) SetSchedules(v []*Schedule) *PolicyDetails {
 func (s *PolicyDetails) SetTargetTags(v []*Tag) *PolicyDetails {
 	s.TargetTags = v
 	return s
+}
+
+// A requested resource was not found.
+type ResourceNotFoundException struct {
+	_            struct{}                  `type:"structure"`
+	RespMetadata protocol.ResponseMetadata `json:"-" xml:"-"`
+
+	Code_ *string `locationName:"Code" type:"string"`
+
+	Message_ *string `locationName:"Message" type:"string"`
+
+	// Value is a list of resource IDs that were not found.
+	ResourceIds []*string `type:"list"`
+
+	// Value is the type of resource that was not found.
+	ResourceType *string `type:"string"`
+}
+
+// String returns the string representation
+func (s ResourceNotFoundException) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ResourceNotFoundException) GoString() string {
+	return s.String()
+}
+
+func newErrorResourceNotFoundException(v protocol.ResponseMetadata) error {
+	return &ResourceNotFoundException{
+		RespMetadata: v,
+	}
+}
+
+// Code returns the exception type name.
+func (s *ResourceNotFoundException) Code() string {
+	return "ResourceNotFoundException"
+}
+
+// Message returns the exception's message.
+func (s *ResourceNotFoundException) Message() string {
+	if s.Message_ != nil {
+		return *s.Message_
+	}
+	return ""
+}
+
+// OrigErr always returns nil, satisfies awserr.Error interface.
+func (s *ResourceNotFoundException) OrigErr() error {
+	return nil
+}
+
+func (s *ResourceNotFoundException) Error() string {
+	return fmt.Sprintf("%s: %s\n%s", s.Code(), s.Message(), s.String())
+}
+
+// Status code returns the HTTP status code for the request's response error.
+func (s *ResourceNotFoundException) StatusCode() int {
+	return s.RespMetadata.StatusCode
+}
+
+// RequestID returns the service's response RequestID for request.
+func (s *ResourceNotFoundException) RequestID() string {
+	return s.RespMetadata.RequestID
 }
 
 // Specifies the retention rule for a lifecycle policy. You can retain snapshots
@@ -1606,7 +2407,7 @@ func (s *RetainRule) SetIntervalUnit(v string) *RetainRule {
 	return s
 }
 
-// Specifies a schedule.
+// Specifies a backup schedule for a snapshot or AMI lifecycle policy.
 type Schedule struct {
 	_ struct{} `type:"structure"`
 
@@ -1614,10 +2415,13 @@ type Schedule struct {
 	// created by this policy.
 	CopyTags *bool `type:"boolean"`
 
-	// The create rule.
+	// The creation rule.
 	CreateRule *CreateRule `type:"structure"`
 
-	// Enable fast snapshot restore.
+	// The rule for cross-Region snapshot copies.
+	CrossRegionCopyRules []*CrossRegionCopyRule `type:"list"`
+
+	// The rule for enabling fast snapshot restore.
 	FastRestoreRule *FastRestoreRule `type:"structure"`
 
 	// The name of the schedule.
@@ -1625,6 +2429,9 @@ type Schedule struct {
 
 	// The retention rule.
 	RetainRule *RetainRule `type:"structure"`
+
+	// The rule for sharing snapshots with other AWS accounts.
+	ShareRules []*ShareRule `type:"list"`
 
 	// The tags to apply to policy-created resources. These user-defined tags are
 	// in addition to the AWS-added lifecycle tags.
@@ -1655,6 +2462,16 @@ func (s *Schedule) Validate() error {
 			invalidParams.AddNested("CreateRule", err.(request.ErrInvalidParams))
 		}
 	}
+	if s.CrossRegionCopyRules != nil {
+		for i, v := range s.CrossRegionCopyRules {
+			if v == nil {
+				continue
+			}
+			if err := v.Validate(); err != nil {
+				invalidParams.AddNested(fmt.Sprintf("%s[%v]", "CrossRegionCopyRules", i), err.(request.ErrInvalidParams))
+			}
+		}
+	}
 	if s.FastRestoreRule != nil {
 		if err := s.FastRestoreRule.Validate(); err != nil {
 			invalidParams.AddNested("FastRestoreRule", err.(request.ErrInvalidParams))
@@ -1663,6 +2480,16 @@ func (s *Schedule) Validate() error {
 	if s.RetainRule != nil {
 		if err := s.RetainRule.Validate(); err != nil {
 			invalidParams.AddNested("RetainRule", err.(request.ErrInvalidParams))
+		}
+	}
+	if s.ShareRules != nil {
+		for i, v := range s.ShareRules {
+			if v == nil {
+				continue
+			}
+			if err := v.Validate(); err != nil {
+				invalidParams.AddNested(fmt.Sprintf("%s[%v]", "ShareRules", i), err.(request.ErrInvalidParams))
+			}
 		}
 	}
 	if s.TagsToAdd != nil {
@@ -1704,6 +2531,12 @@ func (s *Schedule) SetCreateRule(v *CreateRule) *Schedule {
 	return s
 }
 
+// SetCrossRegionCopyRules sets the CrossRegionCopyRules field's value.
+func (s *Schedule) SetCrossRegionCopyRules(v []*CrossRegionCopyRule) *Schedule {
+	s.CrossRegionCopyRules = v
+	return s
+}
+
 // SetFastRestoreRule sets the FastRestoreRule field's value.
 func (s *Schedule) SetFastRestoreRule(v *FastRestoreRule) *Schedule {
 	s.FastRestoreRule = v
@@ -1722,6 +2555,12 @@ func (s *Schedule) SetRetainRule(v *RetainRule) *Schedule {
 	return s
 }
 
+// SetShareRules sets the ShareRules field's value.
+func (s *Schedule) SetShareRules(v []*ShareRule) *Schedule {
+	s.ShareRules = v
+	return s
+}
+
 // SetTagsToAdd sets the TagsToAdd field's value.
 func (s *Schedule) SetTagsToAdd(v []*Tag) *Schedule {
 	s.TagsToAdd = v
@@ -1731,6 +2570,70 @@ func (s *Schedule) SetTagsToAdd(v []*Tag) *Schedule {
 // SetVariableTags sets the VariableTags field's value.
 func (s *Schedule) SetVariableTags(v []*Tag) *Schedule {
 	s.VariableTags = v
+	return s
+}
+
+// Specifies a rule for sharing snapshots across AWS accounts.
+type ShareRule struct {
+	_ struct{} `type:"structure"`
+
+	// The IDs of the AWS accounts with which to share the snapshots.
+	//
+	// TargetAccounts is a required field
+	TargetAccounts []*string `min:"1" type:"list" required:"true"`
+
+	// The period after which snapshots that are shared with other AWS accounts
+	// are automatically unshared.
+	UnshareInterval *int64 `min:"1" type:"integer"`
+
+	// The unit of time for the automatic unsharing interval.
+	UnshareIntervalUnit *string `type:"string" enum:"RetentionIntervalUnitValues"`
+}
+
+// String returns the string representation
+func (s ShareRule) String() string {
+	return awsutil.Prettify(s)
+}
+
+// GoString returns the string representation
+func (s ShareRule) GoString() string {
+	return s.String()
+}
+
+// Validate inspects the fields of the type to determine if they are valid.
+func (s *ShareRule) Validate() error {
+	invalidParams := request.ErrInvalidParams{Context: "ShareRule"}
+	if s.TargetAccounts == nil {
+		invalidParams.Add(request.NewErrParamRequired("TargetAccounts"))
+	}
+	if s.TargetAccounts != nil && len(s.TargetAccounts) < 1 {
+		invalidParams.Add(request.NewErrParamMinLen("TargetAccounts", 1))
+	}
+	if s.UnshareInterval != nil && *s.UnshareInterval < 1 {
+		invalidParams.Add(request.NewErrParamMinValue("UnshareInterval", 1))
+	}
+
+	if invalidParams.Len() > 0 {
+		return invalidParams
+	}
+	return nil
+}
+
+// SetTargetAccounts sets the TargetAccounts field's value.
+func (s *ShareRule) SetTargetAccounts(v []*string) *ShareRule {
+	s.TargetAccounts = v
+	return s
+}
+
+// SetUnshareInterval sets the UnshareInterval field's value.
+func (s *ShareRule) SetUnshareInterval(v int64) *ShareRule {
+	s.UnshareInterval = &v
+	return s
+}
+
+// SetUnshareIntervalUnit sets the UnshareIntervalUnit field's value.
+func (s *ShareRule) SetUnshareIntervalUnit(v string) *ShareRule {
+	s.UnshareIntervalUnit = &v
 	return s
 }
 
@@ -2030,6 +2933,30 @@ func (s UpdateLifecyclePolicyOutput) GoString() string {
 }
 
 const (
+	// EventSourceValuesManagedCwe is a EventSourceValues enum value
+	EventSourceValuesManagedCwe = "MANAGED_CWE"
+)
+
+// EventSourceValues_Values returns all elements of the EventSourceValues enum
+func EventSourceValues_Values() []string {
+	return []string{
+		EventSourceValuesManagedCwe,
+	}
+}
+
+const (
+	// EventTypeValuesShareSnapshot is a EventTypeValues enum value
+	EventTypeValuesShareSnapshot = "shareSnapshot"
+)
+
+// EventTypeValues_Values returns all elements of the EventTypeValues enum
+func EventTypeValues_Values() []string {
+	return []string{
+		EventTypeValuesShareSnapshot,
+	}
+}
+
+const (
 	// GettablePolicyStateValuesEnabled is a GettablePolicyStateValues enum value
 	GettablePolicyStateValuesEnabled = "ENABLED"
 
@@ -2040,15 +2967,46 @@ const (
 	GettablePolicyStateValuesError = "ERROR"
 )
 
+// GettablePolicyStateValues_Values returns all elements of the GettablePolicyStateValues enum
+func GettablePolicyStateValues_Values() []string {
+	return []string{
+		GettablePolicyStateValuesEnabled,
+		GettablePolicyStateValuesDisabled,
+		GettablePolicyStateValuesError,
+	}
+}
+
 const (
 	// IntervalUnitValuesHours is a IntervalUnitValues enum value
 	IntervalUnitValuesHours = "HOURS"
 )
 
+// IntervalUnitValues_Values returns all elements of the IntervalUnitValues enum
+func IntervalUnitValues_Values() []string {
+	return []string{
+		IntervalUnitValuesHours,
+	}
+}
+
 const (
 	// PolicyTypeValuesEbsSnapshotManagement is a PolicyTypeValues enum value
 	PolicyTypeValuesEbsSnapshotManagement = "EBS_SNAPSHOT_MANAGEMENT"
+
+	// PolicyTypeValuesImageManagement is a PolicyTypeValues enum value
+	PolicyTypeValuesImageManagement = "IMAGE_MANAGEMENT"
+
+	// PolicyTypeValuesEventBasedPolicy is a PolicyTypeValues enum value
+	PolicyTypeValuesEventBasedPolicy = "EVENT_BASED_POLICY"
 )
+
+// PolicyTypeValues_Values returns all elements of the PolicyTypeValues enum
+func PolicyTypeValues_Values() []string {
+	return []string{
+		PolicyTypeValuesEbsSnapshotManagement,
+		PolicyTypeValuesImageManagement,
+		PolicyTypeValuesEventBasedPolicy,
+	}
+}
 
 const (
 	// ResourceTypeValuesVolume is a ResourceTypeValues enum value
@@ -2057,6 +3015,14 @@ const (
 	// ResourceTypeValuesInstance is a ResourceTypeValues enum value
 	ResourceTypeValuesInstance = "INSTANCE"
 )
+
+// ResourceTypeValues_Values returns all elements of the ResourceTypeValues enum
+func ResourceTypeValues_Values() []string {
+	return []string{
+		ResourceTypeValuesVolume,
+		ResourceTypeValuesInstance,
+	}
+}
 
 const (
 	// RetentionIntervalUnitValuesDays is a RetentionIntervalUnitValues enum value
@@ -2072,6 +3038,16 @@ const (
 	RetentionIntervalUnitValuesYears = "YEARS"
 )
 
+// RetentionIntervalUnitValues_Values returns all elements of the RetentionIntervalUnitValues enum
+func RetentionIntervalUnitValues_Values() []string {
+	return []string{
+		RetentionIntervalUnitValuesDays,
+		RetentionIntervalUnitValuesWeeks,
+		RetentionIntervalUnitValuesMonths,
+		RetentionIntervalUnitValuesYears,
+	}
+}
+
 const (
 	// SettablePolicyStateValuesEnabled is a SettablePolicyStateValues enum value
 	SettablePolicyStateValuesEnabled = "ENABLED"
@@ -2079,3 +3055,11 @@ const (
 	// SettablePolicyStateValuesDisabled is a SettablePolicyStateValues enum value
 	SettablePolicyStateValuesDisabled = "DISABLED"
 )
+
+// SettablePolicyStateValues_Values returns all elements of the SettablePolicyStateValues enum
+func SettablePolicyStateValues_Values() []string {
+	return []string{
+		SettablePolicyStateValuesEnabled,
+		SettablePolicyStateValuesDisabled,
+	}
+}

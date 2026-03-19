@@ -1,42 +1,43 @@
 package printers
 
 import (
-	"context"
 	"encoding/xml"
 	"fmt"
+	"io"
+	"maps"
+	"slices"
+	"strings"
+
+	"github.com/go-xmlfmt/xmlfmt"
 
 	"github.com/golangci/golangci-lint/pkg/logutils"
 	"github.com/golangci/golangci-lint/pkg/result"
 )
 
-type checkstyleOutput struct {
-	XMLName xml.Name          `xml:"checkstyle"`
-	Version string            `xml:"version,attr"`
-	Files   []*checkstyleFile `xml:"file"`
+const defaultCheckstyleSeverity = "error"
+
+// Checkstyle prints issues in the Checkstyle format.
+// https://checkstyle.org/config.html
+type Checkstyle struct {
+	log       logutils.Log
+	w         io.Writer
+	sanitizer severitySanitizer
 }
 
-type checkstyleFile struct {
-	Name   string             `xml:"name,attr"`
-	Errors []*checkstyleError `xml:"error"`
+func NewCheckstyle(log logutils.Log, w io.Writer) *Checkstyle {
+	return &Checkstyle{
+		log: log.Child(logutils.DebugKeyCheckstylePrinter),
+		w:   w,
+		sanitizer: severitySanitizer{
+			// https://checkstyle.org/config.html#Severity
+			// https://checkstyle.org/property_types.html#SeverityLevel
+			allowedSeverities: []string{"ignore", "info", "warning", defaultCheckstyleSeverity},
+			defaultSeverity:   defaultCheckstyleSeverity,
+		},
+	}
 }
 
-type checkstyleError struct {
-	Column   int    `xml:"column,attr"`
-	Line     int    `xml:"line,attr"`
-	Message  string `xml:"message,attr"`
-	Severity string `xml:"severity,attr"`
-	Source   string `xml:"source,attr"`
-}
-
-const defaultSeverity = "error"
-
-type Checkstyle struct{}
-
-func NewCheckstyle() *Checkstyle {
-	return &Checkstyle{}
-}
-
-func (Checkstyle) Print(ctx context.Context, issues []result.Issue) error {
+func (p *Checkstyle) Print(issues []result.Issue) error {
 	out := checkstyleOutput{
 		Version: "5.0",
 	}
@@ -59,22 +60,49 @@ func (Checkstyle) Print(ctx context.Context, issues []result.Issue) error {
 			Line:     issue.Line(),
 			Message:  issue.Text,
 			Source:   issue.FromLinter,
-			Severity: defaultSeverity,
+			Severity: p.sanitizer.Sanitize(issue.Severity),
 		}
 
 		file.Errors = append(file.Errors, newError)
 	}
 
-	out.Files = make([]*checkstyleFile, 0, len(files))
-	for _, file := range files {
-		out.Files = append(out.Files, file)
+	err := p.sanitizer.Err()
+	if err != nil {
+		p.log.Infof("%v", err)
 	}
+
+	out.Files = slices.SortedFunc(maps.Values(files), func(a *checkstyleFile, b *checkstyleFile) int {
+		return strings.Compare(a.Name, b.Name)
+	})
 
 	data, err := xml.Marshal(&out)
 	if err != nil {
 		return err
 	}
 
-	fmt.Fprintf(logutils.StdOut, "%s%s\n", xml.Header, data)
+	_, err = fmt.Fprintf(p.w, "%s%s\n", xml.Header, xmlfmt.FormatXML(string(data), "", "  "))
+	if err != nil {
+		return err
+	}
+
 	return nil
+}
+
+type checkstyleOutput struct {
+	XMLName xml.Name          `xml:"checkstyle"`
+	Version string            `xml:"version,attr"`
+	Files   []*checkstyleFile `xml:"file"`
+}
+
+type checkstyleFile struct {
+	Name   string             `xml:"name,attr"`
+	Errors []*checkstyleError `xml:"error"`
+}
+
+type checkstyleError struct {
+	Column   int    `xml:"column,attr"`
+	Line     int    `xml:"line,attr"`
+	Message  string `xml:"message,attr"`
+	Severity string `xml:"severity,attr"`
+	Source   string `xml:"source,attr"`
 }
